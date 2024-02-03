@@ -200,6 +200,7 @@
                 <Button Command="{Binding ShowVisualProperty}" ToolTip="Visual Settings">
                     <Image Width="32" Height="32" Source="/Windows/MainWindow/Tools_Settings.png"/>
                 </Button>
+                <Button Command="{Binding ChangeLanguage}" ToolTip="{DynamicResource Change Language}" Content="{DynamicResource RU_EN}"/>
             </ToolBar>
         </ToolBarTray>
         <Grid>
@@ -217,7 +218,7 @@
                 </Grid.RowDefinitions>
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel>
-                        <Expander Header="Actions" MinWidth="20" DataContext="{Binding CombinationsLogic}">
+                        <Expander Header="{DynamicResource Actions}" MinWidth="20" DataContext="{Binding CombinationsLogic}">
                             <Expander.ContextMenu>
                                 <ContextMenu>
                                     <MenuItem Header="Add">
@@ -240,7 +241,7 @@
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal">
                                     <Image Style="{StaticResource ButtonImage16}" Source="/Windows/MainWindow/Materials32.png"/>
-                                    <TextBlock Text="Materials" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{DynamicResource Materials}" Margin="5,0,0,0"/>
                                 </StackPanel>
                             </Expander.Header>
                             <Expander.ContextMenu>
@@ -284,10 +285,10 @@
                                      ItemTemplate="{StaticResource ColoredItemTemplate}"
                                      ContextMenu="{StaticResource EditCopyDelete}"/>
                         </Expander>
-                        <Expander Header="Geometry" MinWidth="20">
+                        <Expander Header="{DynamicResource Geometry}" MinWidth="20">
                             <Expander.ContextMenu>
                                 <ContextMenu>
-                                    <MenuItem Header="Add" DataContext="{Binding PrimitiveLogic}">
+                                    <MenuItem Header="{DynamicResource Add}" DataContext="{Binding PrimitiveLogic}">
                                         <MenuItem Header="Rectangle" Command="{Binding Add}" CommandParameter="{x:Static enums:PrimitiveType.Rectangle}">
                                             <MenuItem.Icon>
                                                 <Image Style="{StaticResource ButtonImage16}" Source="/Windows/MainWindow/Rectangle32.png" />
