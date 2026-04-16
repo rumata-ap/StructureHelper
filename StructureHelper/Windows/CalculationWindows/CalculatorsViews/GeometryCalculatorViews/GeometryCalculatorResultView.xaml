@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Calculations.Calculators.GeometryCalculatorVMs"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance vm:GeometryCalculatorResultViewModel}"
-        Title="Geometry Properies" Height="450" Width="850" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource Geometry Properies}" Height="450" Width="850" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

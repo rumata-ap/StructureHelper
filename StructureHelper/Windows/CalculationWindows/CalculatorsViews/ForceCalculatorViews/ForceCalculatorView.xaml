@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Calculations.Calculators"
         d:DataContext="{d:DesignInstance vm:ForceCalculatorViewModel}"
         mc:Ignorable="d"
-        Title="Analysis by forces" Height="300" Width="400" MinHeight="300" MinWidth="400" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
+        Title="{DynamicResource Analysis by forces}" Height="300" Width="400" MinHeight="300" MinWidth="400" WindowStartupLocation="CenterScreen" Closing="Window_Closing">
     <Window.Resources>
         <Style x:Key="cbStyle" TargetType="CheckBox">
             <Setter Property="Margin" Value="0,5,0,5"/>

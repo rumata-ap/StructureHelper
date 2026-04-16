@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Materials"
         d:DataContext="{d:DesignInstance vm:HeadMaterialsViewModel}"
         mc:Ignorable="d"
-        Title="Materials" Height="350" Width="680" MinHeight="350" MinWidth="680" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource Materials}" Height="350" Width="680" MinHeight="350" MinWidth="680" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
     </Window.Resources>

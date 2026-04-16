@@ -7,7 +7,7 @@
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         d:DataContext="{d:DesignInstance local:GraphViewModel}"
         mc:Ignorable="d"
-        Title="Graph" Height="550" Width="800" MinHeight="500" MinWidth="600" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource Graph}" Height="550" Width="800" MinHeight="500" MinWidth="600" WindowStartupLocation="CenterScreen">
     <DockPanel>
         <!--<ToolBarTray DockPanel.Dock="Top">
             <ToolBar>

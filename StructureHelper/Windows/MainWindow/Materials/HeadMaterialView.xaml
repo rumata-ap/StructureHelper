@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Materials"
         d:DataContext="{d:DesignInstance vm:HeadMaterialViewModel}"
         mc:Ignorable="d"
-        Title="Material properties"
+        Title="{DynamicResource Material properties}"
         Height="350" Width="300"
         MinWidth="300" MaxWidth="400" MinHeight="350" MaxHeight="500"
         WindowStartupLocation="CenterScreen">

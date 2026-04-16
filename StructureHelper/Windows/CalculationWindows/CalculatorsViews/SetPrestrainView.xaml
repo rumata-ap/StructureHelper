@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Calculations.Calculators"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance vm:SetPrestrainViewModel}"
-        Title="Set Prestrain" Height="200" Width="250" MinHeight="200" MinWidth="200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="{DynamicResource Set Prestrain}" Height="200" Width="250" MinHeight="200" MinWidth="200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

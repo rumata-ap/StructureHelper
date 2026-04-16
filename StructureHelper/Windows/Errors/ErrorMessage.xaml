@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Errors"
         d:DataContext="{d:DesignInstance vm:ErrorProcessor}"
         mc:Ignorable="d"
-        Title="Error Message" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Width="500" Height="300">
+        Title="{DynamicResource Error Message}" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Width="500" Height="300">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1"/>

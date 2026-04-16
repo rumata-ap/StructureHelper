@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Help"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance vm:AboutViewModel}"
-        Title="Structure Helper" Height="200" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource Structure Helper}" Height="200" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="22"/>
