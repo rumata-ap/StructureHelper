@@ -8,6 +8,15 @@
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance vm:SafetyFactorsViewModel}"
         Title="{DynamicResource Material Safety Factors}" Height="350" Width="500" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.ru-RU.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.en-US.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>

@@ -12,7 +12,13 @@
         MinWidth="300" MaxWidth="400" MinHeight="350" MaxHeight="500"
         WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.ru-RU.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.en-US.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -36,8 +42,8 @@
                     <ColumnDefinition Width="120"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Text="Name"/>
-                <TextBlock Grid.Row="1" Text="Color"/>
+                <TextBlock Grid.Row="0" Text="{DynamicResource Name}"/>
+                <TextBlock Grid.Row="1" Text="{DynamicResource Color}"/>
                 <TextBox Grid.Row="0" Grid.Column="1" Margin="1" Text="{Binding Name}"/>
                 <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
                     <Rectangle Width="100" Margin="1" Stroke="Black">

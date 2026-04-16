@@ -1,46 +1,80 @@
 ```
 # Build artifacts
-*.o
-*.obj
+bin/
+obj/
 *.exe
 *.dll
-*.so
-*.a
-*.out
+*.pdb
+*.nupkg
+*.snupkg
 
 # Dependencies
+packages/
 node_modules/
-venv/
-.venv/
-__pycache__/
-.mypy_cache/
-.pytest_cache/
-target/
-.gradle/
-
-# IDE/Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
-
-# System files
-.DS_Store
-Thumbs.db
-.env
-.env.local
-*.env.*
 
 # Logs
 *.log
 
-# Coverage
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Visual Studio files
+.vs/
+*.VC.db
+*.VC.VC.opendb
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# Environment specific settings
+.env
+.env.local
+*.env.*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Compiled files
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.pyc
+*.pyo
+*.class
+
+# Package manager caches
+.npm/
+.yarn/
+bower_components/
+jspm_packages/
+
+# IDE files
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
 coverage/
-htmlcov/
-.coverage
+*.coverage
+.htmlcov/
 
 # Distribution / packaging
-dist/
-build/
+.DS_Store
+Thumbs.db
 ```

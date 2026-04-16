@@ -101,6 +101,7 @@
     <system:String x:Key="Max Iteration">Макс. итераций</system:String>
     <system:String x:Key="Description">Описание</system:String>
     <system:String x:Key="Name">Имя</system:String>
+    <system:String x:Key="Color">Цвет</system:String>
     <system:String x:Key="Short">Краткое</system:String>
     <system:String x:Key="Unit">Ед. изм.</system:String>
     <system:String x:Key="Value">Значение</system:String>
@@ -152,6 +153,7 @@
     <system:String x:Key="Combination By Factors">Комбинация по факторам</system:String>
 
     <!-- Material Properties -->
+    <system:String x:Key="Material properties">Свойства материала</system:String>
     <system:String x:Key="Material Code">Код материала</system:String>
     <system:String x:Key="Code short name:">Краткое имя кода:</system:String>
     <system:String x:Key="Full name:">Полное имя:</system:String>
@@ -215,6 +217,7 @@
     <system:String x:Key="Geometry Properies">Свойства геометрии</system:String>
     <system:String x:Key="Array">Массив</system:String>
     <system:String x:Key="Structure Helper">Structure Helper</system:String>
+    <system:String x:Key="StructureHelper">Structure Helper</system:String>
     <system:String x:Key="Grid properies">Свойства сетки</system:String>
     <system:String x:Key="Material Partial Factors">Частные коэффициенты материала</system:String>
     <system:String x:Key="Material Safety Factors">Коэффициенты надежности материала</system:String>

@@ -101,6 +101,7 @@
     <system:String x:Key="Max Iteration">Max Iteration</system:String>
     <system:String x:Key="Description">Description</system:String>
     <system:String x:Key="Name">Name</system:String>
+    <system:String x:Key="Color">Color</system:String>
     <system:String x:Key="Short">Short</system:String>
     <system:String x:Key="Unit">Unit</system:String>
     <system:String x:Key="Value">Value</system:String>
@@ -152,6 +153,7 @@
     <system:String x:Key="Combination By Factors">Combination By Factors</system:String>
 
     <!-- Material Properties -->
+    <system:String x:Key="Material properties">Material Properties</system:String>
     <system:String x:Key="Material Code">Material Code</system:String>
     <system:String x:Key="Code short name:">Code short name:</system:String>
     <system:String x:Key="Full name:">Full name:</system:String>
@@ -215,6 +217,7 @@
     <system:String x:Key="Geometry Properies">Geometry Properies</system:String>
     <system:String x:Key="Array">Array</system:String>
     <system:String x:Key="Structure Helper">Structure Helper</system:String>
+    <system:String x:Key="StructureHelper">Structure Helper</system:String>
     <system:String x:Key="Grid properies">Grid properies</system:String>
     <system:String x:Key="Material Partial Factors">Material Partial Factors</system:String>
     <system:String x:Key="Material Safety Factors">Material Safety Factors</system:String>

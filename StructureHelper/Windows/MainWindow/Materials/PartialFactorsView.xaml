@@ -9,7 +9,13 @@
         d:DataContext="{d:DesignInstance vm:PartialFactorsViewModel}"
         Title="{DynamicResource MaterialPartialFactors}" Height="350" Width="500" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.ru-RU.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.en-US.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>

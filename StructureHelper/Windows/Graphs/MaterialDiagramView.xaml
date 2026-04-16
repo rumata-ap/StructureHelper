@@ -8,6 +8,15 @@
         d:DataContext="{d:DesignInstance local:MaterialDiagramViewModel}"
         mc:Ignorable="d"
         Title="{DynamicResource Material Diagram}" Height="550" Width="800" MinHeight="550" MinWidth="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.ru-RU.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.en-US.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>

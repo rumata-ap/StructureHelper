@@ -9,7 +9,13 @@
         mc:Ignorable="d"
         Title="{DynamicResource Materials}" Height="350" Width="680" MinHeight="350" MinWidth="680" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Materials.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.ru-RU.xaml"/>
+                <ResourceDictionary Source="/Infrastructure/UI/Resources/Strings.en-US.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
