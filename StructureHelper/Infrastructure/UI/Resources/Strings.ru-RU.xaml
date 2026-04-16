@@ -218,7 +218,6 @@
     <system:String x:Key="Grid properies">Свойства сетки</system:String>
     <system:String x:Key="Material Partial Factors">Частные коэффициенты материала</system:String>
     <system:String x:Key="Material Safety Factors">Коэффициенты надежности материала</system:String>
-    <system:String x:Key="Materials">Материалы</system:String>
     <system:String x:Key="Graph">График</system:String>
     <system:String x:Key="Material Diagram">Диаграмма материала</system:String>
     <system:String x:Key="Select Primitives">Выбрать элементы</system:String>
