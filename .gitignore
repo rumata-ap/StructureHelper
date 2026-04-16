@@ -1,48 +1,58 @@
-# Compiled and build artifacts
-*.pyc
-__pycache__/
-*.o
-*.obj
-*.class
+```
+# Build artifacts
+bin/
+obj/
 *.exe
 *.dll
-*.so
-*.a
-*.out
+*.pdb
+*.nupkg
+*.msi
+*.msp
+*.msm
 
-# Dependencies
-node_modules/
-venv/
-.venv/
+# Logs
+*.log
+
+# User-specific files
+.vs/
+.vscode/
+*.userprefs
+*.useroptions
+*.suo
+*.user
+*.aps
+*.ncb
+*.ilk
+*.iobj
+*.ipdb
+*.tlog
+*.tag
+
+# Environment specific
 .env
 .env.local
-.env.*
+*.env.*
 
-# Logs and temp files
-*.log
-*.tmp
-*.swp
-*.swo
-
-# Editors
-.vscode/
-.idea/
-
-# System files
+# OS generated files
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
+# Testing
+TestResults/
 
-# Build directories
-dist/
-build/
-target/
-.gradle/
+# NuGet Packages
+*.nupkg
+packages/
 
-# Python specific
-.mypy_cache/
-.pytest_cache/
+# Visual Studio Code
+.vscode/
+
+# Windows
+$RECYCLE.BIN/
+*.tmp
+*.bak
+*.old
+```
