@@ -316,7 +316,6 @@
     <system:String x:Key="%">%</system:String>
 
     <!-- Additional translations for dialogs -->
-    <system:String x:Key="Interpolate Combinations">Интерполяция комбинаций</system:String>
     <system:String x:Key="Force Combination">Комбинация усилий</system:String>
     <system:String x:Key="Force Combination By Factor">Комбинация усилий по фактору</system:String>
     <system:String x:Key="Analysis by forces">Расчет по усилиям</system:String>
