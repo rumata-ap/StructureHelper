@@ -295,6 +295,15 @@
     <system:String x:Key="Set Auto-prestrain">Задать авто-предварительную деформацию</system:String>
     <system:String x:Key="Coefficient">Коэффициент</system:String>
 
+    <!-- Visual Property View -->
+    <system:String x:Key="GridProperties">Свойства сетки</system:String>
+    <system:String x:Key="AxisGridThickness">Толщина осей сетки</system:String>
+    <system:String x:Key="MeshSize">Размер ячейки сетки</system:String>
+
+    <!-- Material Partial Factors -->
+    <system:String x:Key="MaterialPartialFactors">Частные коэффициенты материала</system:String>
+    <system:String x:Key="StressState">Напряженное состояние</system:String>
+
     <!-- Primitive Popup (Russian already present, adding keys for consistency) -->
     <system:String x:Key="Координата X">Координата X</system:String>
     <system:String x:Key="Координата Y">Координата Y</system:String>

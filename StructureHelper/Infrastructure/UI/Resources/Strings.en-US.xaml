@@ -295,6 +295,15 @@
     <system:String x:Key="Set Auto-prestrain">Set Auto-prestrain</system:String>
     <system:String x:Key="Coefficient">Coefficient</system:String>
 
+    <!-- Visual Property View -->
+    <system:String x:Key="GridProperties">Grid Properties</system:String>
+    <system:String x:Key="AxisGridThickness">Axis grid thickness</system:String>
+    <system:String x:Key="MeshSize">Mesh size</system:String>
+
+    <!-- Material Partial Factors -->
+    <system:String x:Key="MaterialPartialFactors">Material Partial Factors</system:String>
+    <system:String x:Key="StressState">Stress state</system:String>
+
     <!-- Primitive Popup -->
     <system:String x:Key="Координата X">X Coordinate</system:String>
     <system:String x:Key="Координата Y">Y Coordinate</system:String>
