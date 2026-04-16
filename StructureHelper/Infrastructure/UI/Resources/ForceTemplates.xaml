@@ -12,13 +12,13 @@
                 <ColumnDefinition Width="200"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="Name"/>
+            <TextBlock Text="{DynamicResource Name}"/>
             <TextBox Grid.Column="1" Text="{Binding Name}"/>
-            <TextBlock Grid.Row="1" Text="Set force into initial Gravity Center"/>
+            <TextBlock Grid.Row="1" Text="{DynamicResource Set force into initial Gravity Center}"/>
             <CheckBox Grid.Row="1" Grid.Column="1" Margin="3,5,3,5" IsChecked="{Binding SetInGravityCenter}"/>
-            <TextBlock Grid.Row="2" Text="Center X"/>
+            <TextBlock Grid.Row="2" Text="{DynamicResource Center X}"/>
             <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding CenterX}" IsEnabled="{Binding CoordEnable}"/>
-            <TextBlock Grid.Row="3" Text="Center Y"/>
+            <TextBlock Grid.Row="3" Text="{DynamicResource Center Y}"/>
             <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding CenterY}" IsEnabled="{Binding CoordEnable}"/>
         </Grid>
     </DataTemplate>

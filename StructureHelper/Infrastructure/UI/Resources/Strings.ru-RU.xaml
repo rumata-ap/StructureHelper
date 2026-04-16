@@ -324,5 +324,7 @@
     <system:String x:Key="Strain">Деформация</system:String>
     <system:String x:Key="x-value">значение x</system:String>
     <system:String x:Key="y-value">значение y</system:String>
+    <system:String x:Key="Ok">ОК</system:String>
+    <system:String x:Key="Cancel">Отмена</system:String>
 
 </ResourceDictionary> 
