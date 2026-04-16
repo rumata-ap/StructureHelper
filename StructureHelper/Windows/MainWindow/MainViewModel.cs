@@ -8,6 +8,7 @@ using StructureHelper.Windows.PrimitiveTemplates.RCs.Beams;
 using StructureHelper.Windows.PrimitiveTemplates.RCs.RectangleBeam;
 using StructureHelper.Windows.ViewModels;
 using StructureHelper.Windows.ViewModels.Forces;
+using System.Linq;
 using StructureHelper.Windows.ViewModels.Materials;
 using StructureHelper.Windows.ViewModels.NdmCrossSections;
 
@@ -244,6 +245,18 @@ namespace StructureHelper.Windows.MainWindow
       // Загрузка файлов ресурсов для выбранного языка
       private void SetLanguageDictionary(int local)
       {
+         // Очищаем предыдущие словари языков
+         var existingDicts = MV.Resources.MergedDictionaries
+            .Where(d => d.Source != null && 
+                       (d.Source.OriginalString.Contains("Strings.en-US") || 
+                        d.Source.OriginalString.Contains("Strings.ru-RU")))
+            .ToList();
+         
+         foreach (var dict in existingDicts)
+         {
+            MV.Resources.MergedDictionaries.Remove(dict);
+         }
+
          ResourceDictionary dict = new ResourceDictionary();
          switch (local)
          {

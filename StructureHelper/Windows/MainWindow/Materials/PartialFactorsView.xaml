@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Materials"
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance vm:PartialFactorsViewModel}"
-        Title="Material Partial Factors" Height="350" Width="500" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource MaterialPartialFactors}" Height="350" Width="500" WindowStartupLocation="CenterScreen">
     <Window.Resources>
 
     </Window.Resources>
@@ -27,10 +27,10 @@
                 </Style>
             </DataGrid.RowStyle>
             <DataGrid.Columns>
-                <DataGridComboBoxColumn Header="Stress state" Width="90" MinWidth="70" SelectedItemBinding="{Binding StressState}" ItemsSource="{Binding Source={StaticResource StressStateEnum}}"/>
-                <DataGridComboBoxColumn Header="Limit state" Width="90" MinWidth="70" SelectedItemBinding="{Binding LimitState}" ItemsSource="{Binding Source={StaticResource LimitStateEnum}}"/>
-                <DataGridComboBoxColumn Header="Duration" Width="90" MinWidth="70" SelectedItemBinding="{Binding CalcTerm}" ItemsSource="{Binding Source={StaticResource CalcTermEnum}}"/>
-                <DataGridTextColumn Header="Value" Width="70" MinWidth="70" Binding="{Binding FactorValue, Converter={StaticResource PlainDouble}, ValidatesOnExceptions=True}"/>
+                <DataGridComboBoxColumn Header="{DynamicResource StressState}" Width="90" MinWidth="70" SelectedItemBinding="{Binding StressState}" ItemsSource="{Binding Source={StaticResource StressStateEnum}}"/>
+                <DataGridComboBoxColumn Header="{DynamicResource LimitState}" Width="90" MinWidth="70" SelectedItemBinding="{Binding LimitState}" ItemsSource="{Binding Source={StaticResource LimitStateEnum}}"/>
+                <DataGridComboBoxColumn Header="{DynamicResource Duration}" Width="90" MinWidth="70" SelectedItemBinding="{Binding CalcTerm}" ItemsSource="{Binding Source={StaticResource CalcTermEnum}}"/>
+                <DataGridTextColumn Header="{DynamicResource Value}" Width="70" MinWidth="70" Binding="{Binding FactorValue, Converter={StaticResource PlainDouble}, ValidatesOnExceptions=True}"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Grid.Column="1">

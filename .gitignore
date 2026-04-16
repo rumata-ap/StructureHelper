@@ -1,1 +1,32 @@
-Nothing should be ignored based on the provided file changes. The only modified file is a XAML resource file (`StructureHelper/Infrastructure/UI/Resources/Strings.ru-RU.xaml`), which is a source code file that should be tracked in version control. No build artifacts, dependencies, or temporary files are present in the changes.
+```
+# Build artifacts
+*.obj
+*.exe
+*.dll
+*.pdb
+*.userprefs
+*.cache
+*.manifest
+*.gch
+
+# Dependencies
+packages/
+bin/
+obj/
+Debug/
+Release/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vs/
+.vshost.exe
+.user
+.suo
+```
