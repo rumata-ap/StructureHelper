@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:StructureHelper.Windows.Services"
         d:DataContext ="{d:DesignInstance local:CopyByParameterViewModel}"
         mc:Ignorable="d"
-        Title="Copy To" Height="260" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
+        Title="{DynamicResource Copy To}" Height="260" Width="300" ResizeMode="NoResize" WindowStartupLocation="CenterOwner">
     <Window.Resources>
         <Style TargetType="TextBox">
             <Setter Property="Margin" Value="2"/>

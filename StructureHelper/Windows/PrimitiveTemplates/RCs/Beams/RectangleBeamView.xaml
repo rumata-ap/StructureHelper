@@ -8,7 +8,7 @@
         xmlns:vm ="clr-namespace:StructureHelper.Windows.ViewModels.PrimitiveTemplates.RCs"
         d:DataContext="{d:DesignInstance vm:RectangleBeamViewModel}"
         mc:Ignorable="d"
-        Title="Reinforced rectangle template" Height="220" Width="300" SizeToContent="Height" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="{DynamicResource Reinforced rectangle template}" Height="220" Width="300" SizeToContent="Height" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Window.Resources>
     </Window.Resources>
     <Grid>

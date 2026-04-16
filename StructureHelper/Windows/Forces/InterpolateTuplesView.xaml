@@ -8,7 +8,7 @@
         xmlns:uc="clr-namespace:StructureHelper.Windows.UserControls"
         d:DataContext="{d:DesignInstance local:InterpolateTuplesViewModel}"
         mc:Ignorable="d"
-        Title="Interpolate Combinations" Height="200" Width="460" MinHeight="180" MinWidth="460" WindowStartupLocation="CenterScreen">
+        Title="{DynamicResource Interpolate Combinations}" Height="200" Width="500" MinHeight="180" MinWidth="500" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <Style TargetType="Button">
@@ -42,10 +42,10 @@
                     <ColumnDefinition/>
                     <ColumnDefinition Width="120"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="1" Text="Moment Mx" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Column="2" Text="Moment My" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Column="3" Text="Force Nz" HorizontalAlignment="Center"/>
-                <TextBlock Grid.Row="1" Text="Start Combination"/>
+                <TextBlock Grid.Column="1" Text="{DynamicResource Moment Mx}" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="2" Text="{DynamicResource Moment My}" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Column="3" Text="{DynamicResource Force Nz}" HorizontalAlignment="Center"/>
+                <TextBlock Grid.Row="1" Text="{DynamicResource Start Combination}"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding StartMx, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding StartMy, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="1" Grid.Column="3" Text="{Binding StartNz, Converter={StaticResource ForceConverter}, ValidatesOnExceptions=True}"/>
@@ -93,11 +93,11 @@
                         </Canvas>
                     </Viewbox>
                 </Button>
-                <TextBlock Grid.Row="3" Text="Finish Combination"/>
+                <TextBlock Grid.Row="3" Text="{DynamicResource Finish Combination}"/>
                 <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding FinishMx, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="3" Grid.Column="2" Text="{Binding FinishMy, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="3" Grid.Column="3" Text="{Binding FinishNz, Converter={StaticResource ForceConverter}, ValidatesOnExceptions=True}"/>
-                <TextBlock Grid.Row="4" Text="Step count" Visibility="{Binding StepCountVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                <TextBlock Grid.Row="4" Text="{DynamicResource Step count}" Visibility="{Binding StepCountVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                 <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding StepCount, ValidatesOnExceptions=True}" Visibility="{Binding StepCountVisible, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                 <uc:MultiplyDouble Grid.Column="4" Grid.Row="1" DoubleFactor="{Binding StartFactor}" ValueChanged="StartValueChanged"/>
                 <uc:MultiplyDouble Grid.Column="4" Grid.Row="3" DoubleFactor="{Binding FinishFactor}" ValueChanged="FinishValueChanged"/>

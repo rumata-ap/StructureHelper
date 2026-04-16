@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:StructureHelper.Windows.ViewModels.Forces"
         d:DataContext="{d:DesignInstance vm:ForceCombinationByFactorVM}"
         mc:Ignorable="d"
-        Title="Force Combination By Factor" Height="290" Width="350" MinHeight="290" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+        Title="{DynamicResource Force Combination By Factor}" Height="290" Width="350" MinHeight="290" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="95"/>
