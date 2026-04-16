@@ -3,6 +3,8 @@ using StructureHelper.UnitSystem;
 using StructureHelper.Windows.MainWindow;
 using StructureHelperLogics.Services.NdmCalculations;
 using System.Windows;
+using System.Threading;
+using System.Globalization;
 using Autofac;
 
 namespace StructureHelper
@@ -18,6 +20,11 @@ namespace StructureHelper
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            
+            // Set culture to Russian (or detect from system)
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
+            
             var builder = new ContainerBuilder();
             builder.RegisterType<PrimitiveRepository>().As<IPrimitiveRepository>().SingleInstance();
             builder.RegisterType<UnitSystemService>().AsSelf().SingleInstance();

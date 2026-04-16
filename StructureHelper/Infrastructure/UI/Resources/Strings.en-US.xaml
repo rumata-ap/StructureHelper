@@ -314,5 +314,7 @@
     <system:String x:Key="Z-порядок">Z-order</system:String>
     <system:String x:Key="Max =">Max =</system:String>
     <system:String x:Key="%">%</system:String>
+    <system:String x:Key="Ok">OK</system:String>
+    <system:String x:Key="Cancel">Cancel</system:String>
 
 </ResourceDictionary> 
