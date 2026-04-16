@@ -145,7 +145,6 @@
     <!-- Edit Panels -->
     <system:String x:Key="Edit primitive">Редактировать элемент</system:String>
     <system:String x:Key="Delete primitive">Удалить элемент</system:String>
-    <system:String x:Key="Materials">Материалы</system:String>
     <system:String x:Key="Move primitives to center">Переместить элементы к центру</system:String>
     <system:String x:Key="About...">О программе...</system:String>
     <system:String x:Key="Settings">Настройки</system:String>
