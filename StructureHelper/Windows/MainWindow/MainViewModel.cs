@@ -252,9 +252,9 @@ namespace StructureHelper.Windows.MainWindow
                         d.Source.OriginalString.Contains("Strings.ru-RU")))
             .ToList();
          
-         foreach (var dict in existingDicts)
+         foreach (var dict_ in existingDicts)
          {
-            MV.Resources.MergedDictionaries.Remove(dict);
+            MV.Resources.MergedDictionaries.Remove(dict_);
          }
 
          ResourceDictionary dict = new ResourceDictionary();
