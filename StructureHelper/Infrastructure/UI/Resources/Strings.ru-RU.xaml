@@ -3,11 +3,153 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
       xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <system:String x:Key="Actions">Усилия</system:String>
+    <system:String x:Key="Actions">Действия</system:String>
     <system:String x:Key="Geometry">Геометрия</system:String>
     <system:String x:Key="Materials">Материалы</system:String>
     <system:String x:Key="Add">Добавить</system:String>
     <system:String x:Key="Change Language">Изменить язык</system:String>
     <system:String x:Key="RU_EN">RU</system:String>
-    <!-- All StringResources Goes Here -->
+    
+    <!-- Main Menu -->
+    <system:String x:Key="File">Файл</system:String>
+    <system:String x:Key="Edit">Правка</system:String>
+    <system:String x:Key="Primitives">Элементы</system:String>
+    <system:String x:Key="Templates">Шаблоны</system:String>
+    <system:String x:Key="Tools">Инструменты</system:String>
+    <system:String x:Key="Help">Помощь</system:String>
+    
+    <!-- Context Menu Items -->
+    <system:String x:Key="Copy">Копировать</system:String>
+    <system:String x:Key="Delete">Удалить</system:String>
+    <system:String x:Key="To Foreground">На передний план</system:String>
+    <system:String x:Key="To Background">На задний план</system:String>
+    <system:String x:Key="Run">Запустить</system:String>
+    
+    <!-- Toolbar Buttons -->
+    <system:String x:Key="Full">Полная</system:String>
+    <system:String x:Key="Fact">По факторам</system:String>
+    <system:String x:Key="Add Full Combination">Добавить полную комбинацию</system:String>
+    <system:String x:Key="Add Factored Combination">Добавить комбинацию по факторам</system:String>
+    
+    <!-- Materials -->
+    <system:String x:Key="Concrete">Бетон</system:String>
+    <system:String x:Key="Reinforcement">Арматура</system:String>
+    <system:String x:Key="Elastic">Упругий</system:String>
+    <system:String x:Key="CarbonFiber">Углеволокно</system:String>
+    <system:String x:Key="GlassFiber">Стекловолокно</system:String>
+    <system:String x:Key="Show Materials">Показать материалы</system:String>
+    <system:String x:Key="Add Reinforcement Material">Добавить материал арматуры</system:String>
+    <system:String x:Key="Add Elastic Material">Добавить упругий материал</system:String>
+    <system:String x:Key="Add Carbon Fiber Material">Добавить материал углеволокна</system:String>
+    <system:String x:Key="Add Glass Fiber Material">Добавить материал стекловолокна</system:String>
+    
+    <!-- Primitives -->
+    <system:String x:Key="Rectangle">Прямоугольник</system:String>
+    <system:String x:Key="Circle">Круг</system:String>
+    <system:String x:Key="Rebar">Стержень</system:String>
+    <system:String x:Key="Point">Точка</system:String>
+    <system:String x:Key="Add Rectangle Primitive">Добавить прямоугольник</system:String>
+    <system:String x:Key="Add Circle Primitive">Добавить круг</system:String>
+    <system:String x:Key="Add Rebar Primitive">Добавить стержень</system:String>
+    <system:String x:Key="Add Point Primitive">Добавить точку</system:String>
+    
+    <!-- RC Templates -->
+    <system:String x:Key="Add Rectangle RC Column">Добавить прямоугольную ж/б колонну</system:String>
+    <system:String x:Key="Add Circle RC Column">Добавить круглую ж/б колонну</system:String>
+    <system:String x:Key="Add RC Beam">Добавить ж/б балку</system:String>
+    <system:String x:Key="Add RC Slab">Добавить ж/б плиту</system:String>
+    <system:String x:Key="Concrete beam">Бетонная балка</system:String>
+    <system:String x:Key="Concrete column">Бетонная колонна</system:String>
+    <system:String x:Key="Concrete slab">Бетонная плита</system:String>
+    <system:String x:Key="Concrete circle">Бетонный круг</system:String>
+    
+    <!-- Analysis -->
+    <system:String x:Key="Analisis">Расчет</system:String>
+    <system:String x:Key="Add Force Calculator">Добавить калькулятор усилий</system:String>
+    <system:String x:Key="Add Interaction Diagram Calculator">Добавить калькулятор диаграммы взаимодействия</system:String>
+    <system:String x:Key="Run Calculations">Запустить расчеты</system:String>
+    <system:String x:Key="Move All Primitives to Gravity Center">Переместить все элементы к центру тяжести</system:String>
+    <system:String x:Key="Visual Settings">Визуальные настройки</system:String>
+    
+    <!-- Status Bar -->
+    <system:String x:Key="Zoom">Масштаб:</system:String>
+    <system:String x:Key="Number of primitives">Количество элементов:</system:String>
+    <system:String x:Key="Grid size">Размер сетки:</system:String>
+    
+    <!-- Calculation Views -->
+    <system:String x:Key="General">Общие</system:String>
+    <system:String x:Key="Limit States">Предельные состояния</system:String>
+    <system:String x:Key="Duration">Длительность</system:String>
+    <system:String x:Key="Forces">Усилия</system:String>
+    <system:String x:Key="S-Order">Порядок S</system:String>
+    <system:String x:Key="Iterations">Итерации</system:String>
+    <system:String x:Key="Limits">Пределы</system:String>
+    <system:String x:Key="Predicates">Предикаты</system:String>
+    <system:String x:Key="States">Состояния</system:String>
+    <system:String x:Key="Terms">Условия</system:String>
+    
+    <!-- DataGrid Headers -->
+    <system:String x:Key="Valid">Действительно</system:String>
+    <system:String x:Key="LimitState">Предельное состояние</system:String>
+    <system:String x:Key="Moment Mx">Момент Mx</system:String>
+    <system:String x:Key="Moment My">Момент My</system:String>
+    <system:String x:Key="Force Nz">Сила Nz</system:String>
+    <system:String x:Key="Kx">Kx</system:String>
+    <system:String x:Key="Ky">Ky</system:String>
+    <system:String x:Key="EpsZ">EpsZ</system:String>
+    <system:String x:Key="Accuracy">Точность</system:String>
+    <system:String x:Key="Max Iteration">Макс. итераций</system:String>
+    <system:String x:Key="Description">Описание</system:String>
+    <system:String x:Key="Name">Имя</system:String>
+    <system:String x:Key="Short">Краткое</system:String>
+    <system:String x:Key="Unit">Ед. изм.</system:String>
+    <system:String x:Key="Value">Значение</system:String>
+    
+    <!-- Graph Views -->
+    <system:String x:Key="X-axis values">Значения оси X</system:String>
+    <system:String x:Key="Y-axis values">Значения оси Y</system:String>
+    <system:String x:Key="Calculation terms">Условия расчета</system:String>
+    
+    <!-- Primitive Properties -->
+    <system:String x:Key="Main">Основные</system:String>
+    <system:String x:Key="Common properties">Общие свойства</system:String>
+    <system:String x:Key="Prestrain">Предварительная деформация</system:String>
+    <system:String x:Key="Visual">Визуальные</system:String>
+    
+    <!-- Progress Views -->
+    <system:String x:Key="Tab gap">Интервал вкладки</system:String>
+    <system:String x:Key="Max priority">Макс. приоритет</system:String>
+    
+    <!-- Error Messages -->
+    <system:String x:Key="Short information">Краткая информация</system:String>
+    <system:String x:Key="Detailed Information">Подробная информация</system:String>
+    
+    <!-- Copy Service -->
+    <system:String x:Key="Coordinates">Координаты</system:String>
+    <system:String x:Key="Relative coordinates">Относительные координаты</system:String>
+    <system:String x:Key="Copy count">Количество копий</system:String>
+    
+    <!-- Multiply Buttons -->
+    <system:String x:Key="*-1">*-1</system:String>
+    <system:String x:Key="*0">*0</system:String>
+    <system:String x:Key="*0.5">*0.5</system:String>
+    <system:String x:Key="*2.0">*2.0</system:String>
+    <system:String x:Key="*(-1)">*(-1)</system:String>
+    <system:String x:Key="*0.1">*0.1</system:String>
+    <system:String x:Key="*10.0">*10.0</system:String>
+    
+    <!-- Window Titles -->
+    <system:String x:Key="Reinforced rectangle template">Шаблон армированного прямоугольника</system:String>
+    <system:String x:Key="Reinforced circle template">Шаблон армированного круга</system:String>
+    
+    <!-- Edit Panels -->
+    <system:String x:Key="Edit primitive">Редактировать элемент</system:String>
+    <system:String x:Key="Delete primitive">Удалить элемент</system:String>
+    <system:String x:Key="Materials">Материалы</system:String>
+    <system:String x:Key="Move primitives to center">Переместить элементы к центру</system:String>
+    <system:String x:Key="About...">О программе...</system:String>
+    <system:String x:Key="Settings">Настройки</system:String>
+    <system:String x:Key="Combination">Комбинация</system:String>
+    <system:String x:Key="Combination By Factors">Комбинация по факторам</system:String>
+
 </ResourceDictionary> 

@@ -1,0 +1,295 @@
+Key	English	Russian
+================================================================================
+LineProperties	Line properties	
+LineSmoothness	Line smoothness	
+StrokeThickness	Stroke thickness	
+FillingOpacity	Filling opacity	
+ShowSafetyFactors	Show Safety Factors	
+ShowPartialFactors	Show Partial Factors	
+FiberCohesionProperties	Fiber Cohesion Properties	
+MaterialCode	Material Code	
+CodeShortName	Code short name:	
+FullName	Full name:	
+MaterialKind	Material Kind	
+MaterialModel	Material Model	
+ULSConcreteStrength	ULS Concrete Strength	
+TotalLayersThickness	Total Layers Thickness	
+GammaFFactor	GammaF2 Factor	
+LibraryMaterial	Library material	
+TensionForULS	Tension for ULS	
+TensionForSLS	Tension for SLS	
+RelativeHumidity	Relative humidity	
+ElasticMaterial	Elastic material	
+YoungSModulus	Young's modulus	
+CompressiveStrength	Compressive strength	
+TensileStrength	Tensile strength	
+LimitState	Limit state	
+Duration	Duration	
+MomentMx	Moment Mx	
+MomentMy	Moment My	
+ForceNz	Force Nz	
+Name	Name	
+SetForceIntoInitialGravityCenter	Set force into initial Gravity Center	
+CenterX	Center X	
+CenterY	Center Y	
+Logic	Logic	
+Maximum	Maximum	
+Minimum	Minimum	
+ConstantValue	Constant value	
+PointCount	Point count	
+AddAll	Add all	
+ClearAll	Clear all	
+Str_8971	>>	
+LtLt	&lt;&lt;	
+SelectAll	Select All	
+UnselectAll	Unselect All	
+InvertSelection	Invert Selection	
+Width	Width	
+Height	Height	
+Diameter	Diameter	
+Take	Take	
+Description	Description	
+Name1	Name:	
+MaterialName	Material Name:	
+CenterX1	Center X:	
+CenterY1	Center Y:	
+Str_3967	Установить впереди всех	
+Str_7228	Установить позади всех	
+X	Координата X	
+Y	Координата Y	
+Str_2458	Высота	
+Str_9165	Материал	
+Str_5891	Цвет	
+Str_3652	Прозрачность	
+Str_3991	%	
+Str_7004	Заблокировать объект	
+Z	Z-порядок	
+Max	Max =	
+Width1	Width:	
+Height1	Height:	
+Area	Area:	
+StartCombination	Start Combination	
+FinishCombination	Finish Combination	
+StepCount	Step count	
+InterpolateCombinations	Interpolate Combinations	
+ForceCombination	Force Combination	
+FullServiceLoadCombination	Full service load combination	
+Mx	Mx	
+My	My	
+Nz	Nz	
+LongTermFactor	Long Term factor	
+ULSSafetyFactor	ULS Safety Factor	
+ForceCombinationByFactor	Force Combination By Factor	
+Progress	Progress	
+TotalStep	Total step	
+CurrentStep	Current step	
+Rebuild	Rebuild	
+Print	Print	
+TabGap	Tab gap	
+MaxPriority	Max priority	
+RebuildDocument	Rebuild document	
+PrintDocument	Print document	
+TraceDocumentViewer	Trace Document Viewer	
+SetAutoPrestrain	Set Auto-prestrain	
+Coefficient	Coefficient	
+SetPrestrain	Set Prestrain	
+UltimateLimitState	Ultimate Limit State	
+ServiceabilityLimitState	Serviceability Limit State	
+ShortTerm	Short Term	
+LongTerm	Long Term	
+General	General	
+LimitStates	Limit States	
+Forces	Forces	
+Primitives	Primitives	
+SOrder	S-Order	
+Iterations	Iterations	
+ConsiderSecondOrderEffects	Consider second order effects	
+GeometryLength	Geometry length	
+BucklingFactorXAxis	Buckling factor x-axis	
+BucklingFactorYAxis	Buckling factor y-axis	
+RequiredAccuracy	Required Accuracy	
+MaximumIterationCount	Maximum Iteration Count	
+AnalysisByForces	Analysis by forces	
+InteractionDiagramCalculator	Interaction Diagram Calculator	
+Graphic	Graphic	
+CrcDiagrams	CrcDiagrams	
+Export	Export	
+Anchorage	Anchorage	
+Geometry	Geometry	
+Acrc	Acrc	
+Valid	Valid	
+LimitState1	LimitState	
+Kx	Kx	
+Ky	Ky	
+EpsZ	EpsZ	
+Accuracy	Accuracy	
+MaxIteration	Max Iteration	
+ShowForceOfCracking	Show force of cracking	
+ShowResultStepByStep	Show result step by step	
+ShowDiagramMomentCurvature	Show diagram moment-curvature	
+ShowInteractionDiagram	Show interaction diagram	
+ShowGraphicResults	Show graphic results	
+ShowDiagramsForCrackedSection	Show diagrams for cracked section	
+ExportResultsToCsv	Export results to *.csv	
+SetStrainsAsAutoPrestrain	Set strains as auto prestrain	
+ShowGeometryProperties	Show Geometry Properties	
+ShowCrackWidth	Show crack width	
+CalculationResults	Calculation Results	
+Limits	Limits	
+Predicates	Predicates	
+States	States	
+Terms	Terms	
+DiagramProperties	Diagram properties	
+Short	Short	
+Unit	Unit	
+Value	Value	
+GeometryProperies	Geometry Properies	
+Array	Array	
+Authors	Authors	
+Version	Version	
+CopyRightCRedikultsevEvgeny	Copy Right (c) Redikultsev Evgeny	
+StructureHelper	Structure Helper	
+AxisGridThickness	Axis grid thickness	
+MeshSize	Mesh size	
+GridProperies	Grid properies	
+Rectangle	Rectangle	
+Circle	Circle	
+Reinforcement	Reinforcement	
+Point	Point	
+EditPrimitive	Edit primitive	
+DeletePrimitive	Delete primitive	
+Materials	Materials	
+MovePrimitivesToCenter	Move primitives to center	
+ConcreteBeam	Concrete beam	
+ConcreteColumn	Concrete column	
+ConcreteSlab	Concrete slab	
+ConcreteCircle	Concrete circle	
+Settings	Settings	
+About	About...	
+Full	Full	
+Fact	Fact	
+Combination	Combination	
+CombinationByFactors	Combination By Factors	
+Edit	Edit	
+Copy	Copy	
+Delete	Delete	
+ToForeground	To Foreground	
+ToBackground	To Background	
+Run	Run	
+File	File	
+Add	Add	
+Templates	Templates	
+Tools	Tools	
+Help	Help	
+Concrete	Concrete	
+Elastic	Elastic	
+CarbonFiber	CarbonFiber	
+GlassFiber	GlassFiber	
+Rebar	Rebar	
+AddForceCalculator	Add Force Calculator	
+AddInteractionDiagramCalculator	Add Interaction Diagram Calculator	
+AddRectangleRCColumn	Add Rectangle RC Column	
+AddCircleRCColumn	Add Circle RC Column	
+AddRCBeam	Add RC Beam	
+AddRCSlab	Add RC slab	
+Analisis	Analisis	
+Zoom	Zoom:	
+NumberOfPrimitives	Number of primitives:	
+GridSize	Grid size:	
+Actions	Actions	
+AddFullCombination	Add Full Combination	
+AddFactoredCombination	Add Factored Combination	
+AddReinforcementMaterial	Add Reinforcement Material	
+AddElasticMaterial	Add Elastic Material	
+AddCarbonFiberMaterial	Add Carbon Fiber Material	
+AddGlassFiberMaterial	Add Glass Fiber Material	
+ShowMaterials	Show Materials	
+BasePrimitives	Base Primitives	
+AddRectanglePrimitive	Add Rectangle Primitive	
+AddCirclePrimitive	Add Circle Primitive	
+AddRebarPrimitive	Add Rebar Primitive	
+AddPointPrimitive	Add Point Primitive	
+RCTemplates	RC Templates	
+AddRCSlab1	Add RC Slab	
+Analises	Analises	
+RunCalculations	Run Calculations	
+MoveAllPrimitivesToGravityCenter	Move All Primitives to Gravity Center	
+VisualSettings	Visual Settings	
+StructureHelper1	StructureHelper	
+StressState	Stress state	
+MaterialPartialFactors	Material Partial Factors	
+PartialFrs	Partial frs	
+MaterialSafetyFactors	Material Safety Factors	
+Str_6165	...	
+Color	Color	
+MaterialProperties	Material properties	
+ShowDiagram	Show diagram	
+CoverGap	Cover gap	
+TopDiameter	Top Diameter	
+BottomDiameter	Bottom Diameter	
+WidthCount	Width count	
+HeightCount	Height count	
+ReinforcedRectangleTemplate	Reinforced rectangle template	
+RebarDiameter	Rebar Diameter	
+RebarCount	Rebar Count	
+ReinforcedCircleTemplate	Reinforced circle template	
+InvertValues	Invert Values	
+DrawLines	Draw Lines	
+XAxisValues	X-axis values	
+YAxisValues	Y-axis values	
+Graph	Graph	
+YValue	y-value	
+XValue	x-value	
+ShowAreas	Show Areas	
+CalculationTerms	Calculation terms	
+MinimumStrain	Minimum strain	
+MaximumStrain	Maximum strain	
+PositiveInTension	Positive in tension	
+DrawLines1	Draw lines	
+AreaUnderLines	Area under lines	
+MaterialDiagram	Material Diagram	
+Stress	Stress	
+Strain	Strain	
+SelectPrimitives	Select Primitives	
+Triangulation	Triangulation	
+Main	Main	
+CommonProperties	Common properties	
+Prestrain	Prestrain	
+Visual	Visual	
+Area1	Area	
+Host	Host	
+MinimumElementDivision	Minimum element division	
+MaximumElementSize	Maximum element size	
+ClearUnderlying	Clear underlying	
+NameOfMaterial	Name of material	
+Triangulate	Triangulate	
+UserSAuto	User's / Auto	
+KX	k_x	
+KY	k_y	
+EpsilonZ	epsilon_z	
+Visible	Visible	
+MaterialColor	Material color	
+ZIndexInteger	Z-index (integer)	
+Opacity	Opacity	
+PrimitiveProperties	PrimitiveProperties	
+Str_8768	*-1	
+Str_5926	*0	
+Str_8025	*0.5	
+Str_6236	*2.0	
+Str_7900	*(-1)	
+Str_2310	*0.1	
+Str_2107	*10.0	
+ShortInformation	Short information	
+DetailedInformation	Detailed Information	
+HappenedSomethingWrong	Happened something wrong	
+ErrorMessage	Error Message	
+RelativeCoordinates	Relative coordinates	
+Coordinates	Coordinates	
+CopyCount	Copy count	
+DeltaX	Delta X	
+DeltaY	Delta Y	
+Angle	Angle	
+Distance	Distance	
+CopyTo	Copy To	
+
+Total unique strings: 291
