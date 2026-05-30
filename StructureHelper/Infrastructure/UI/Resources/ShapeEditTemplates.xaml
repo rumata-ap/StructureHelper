@@ -12,8 +12,8 @@
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Text="Width"/>
-            <TextBlock Grid.Row="1" Text="Height"/>
+            <TextBlock Grid.Row="0" Text="{DynamicResource Width}"/>
+            <TextBlock Grid.Row="1" Text="{DynamicResource Height}"/>
             <TextBox Grid.Row="0" Grid.Column="1" Margin="1" Style="{StaticResource ValidatedError}" Text="{Binding Width, Converter={StaticResource LengthConverter}, ValidatesOnDataErrors=True}"/>
             <TextBox Grid.Row="1" Grid.Column="1" Margin="1" Text="{Binding Height, Converter={StaticResource LengthConverter}, ValidatesOnDataErrors=True}"/>
         </Grid>
@@ -29,7 +29,7 @@
                 <ColumnDefinition Width="100"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Text="Diameter"/>
+            <TextBlock Grid.Row="0" Text="{DynamicResource Diameter}"/>
             <TextBox Grid.Row="0" Grid.Column="1" Margin="1" Style="{StaticResource ValidatedError}" Text="{Binding Diameter, Converter={StaticResource LengthConverter}, ValidatesOnDataErrors=True}"/>
         </Grid>
     </DataTemplate>

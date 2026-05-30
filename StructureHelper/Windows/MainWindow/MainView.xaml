@@ -185,7 +185,7 @@
                     <Image Width="32" Height="32" Source="/Windows/MainWindow/Slab32.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar ToolTip="{DynamicResource Analisis}" DataContext="{Binding CalculatorsLogic}">
+            <ToolBar ToolTip="{DynamicResource Analysis}" DataContext="{Binding CalculatorsLogic}">
                 <Button Command="{Binding Add}" ToolTip="{DynamicResource Add Force Calculator}">
                     <Image Style="{StaticResource ButtonImage32}" Source="/Windows/MainWindow/Calculator32.png"/>
                 </Button>
@@ -321,7 +321,7 @@
                             <Expander.Header>
                                 <StackPanel Orientation="Horizontal">
                                     <Image Style="{StaticResource ButtonImage16}" Source="/Windows/MainWindow/Analysis32.png" />
-                                    <TextBlock Text="{DynamicResource Analisis}" Margin="5,0,0,0"/>
+                                    <TextBlock Text="{DynamicResource Analysis}" Margin="5,0,0,0"/>
                                 </StackPanel>
                             </Expander.Header>
                             <Expander.ContextMenu>

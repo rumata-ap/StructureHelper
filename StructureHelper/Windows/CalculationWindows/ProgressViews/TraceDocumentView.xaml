@@ -1,4 +1,4 @@
-﻿<Window x:Class="StructureHelper.Windows.CalculationWindows.ProgressViews.TraceDocumentView"
+<Window x:Class="StructureHelper.Windows.CalculationWindows.ProgressViews.TraceDocumentView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -14,14 +14,14 @@
         </Grid.ColumnDefinitions>
         <FlowDocumentReader Name="DocumentReader" ViewingMode="Scroll"/>
         <StackPanel Grid.Column="1">
-            <GroupBox Header="Tab gap">
+            <GroupBox Header="{DynamicResource Tab gap}">
                 <TextBox Text="{Binding TabGap, ValidatesOnExceptions=True}" />
             </GroupBox>
-            <GroupBox Header="Max priority">
+            <GroupBox Header="{DynamicResource Max priority}">
                 <TextBox Text="{Binding MaxPriority, ValidatesOnExceptions=True}" />
             </GroupBox>
-            <Button Margin="3" Content="Rebuild" ToolTip="Rebuild document" Command="{Binding RebuildCommand}"/>
-            <Button Margin="3" Content="Print" ToolTip="Print document" Command="{Binding PrintDocumentCommand}"/>
+            <Button Margin="3" Content="{DynamicResource Rebuild}" ToolTip="{DynamicResource Rebuild}" Command="{Binding RebuildCommand}"/>
+            <Button Margin="3" Content="{DynamicResource Print}" ToolTip="{DynamicResource Print}" Command="{Binding PrintDocumentCommand}"/>
          </StackPanel>
     </Grid>
 </Window>

@@ -1,4 +1,4 @@
-﻿<Window x:Class="StructureHelper.Windows.Errors.ErrorMessage"
+<Window x:Class="StructureHelper.Windows.Errors.ErrorMessage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -15,17 +15,17 @@
         </Grid.ColumnDefinitions>
         <!--<Image Source="IconBug128.png"/>-->
         <TabControl Grid.Column="1" x:Name="tabControl">
-            <TabItem Header="Short information" Margin="0">
+            <TabItem Header="{DynamicResource Short information}" Margin="0">
                 <Grid Background="#FFE5E5E5">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="50"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <TextBlock x:Name="HeaderText" TextWrapping="Wrap" Text="Happened something wrong" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold"/>
+                    <TextBlock x:Name="HeaderText" TextWrapping="Wrap" Text="{DynamicResource Happened something wrong}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold"/>
                     <TextBlock Grid.Row="1" x:Name="MainText" TextWrapping="Wrap" Text="{Binding ShortText}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Detailed Information">
+            <TabItem Header="{DynamicResource Detailed Information}">
                 <Grid Background="#FFE5E5E5">
                     <ScrollViewer>
                         <TextBlock x:Name="ExtendedText" TextWrapping="Wrap" Text="{Binding DetailText}"/>

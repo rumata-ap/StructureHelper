@@ -9,7 +9,7 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="215"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Margin="35,0,0,0" Text="Logic"/>
+                <TextBlock Margin="35,0,0,0" Text="{DynamicResource Logic}"/>
                 <ComboBox Grid.Column="1" ItemsSource="{Binding Logics}" SelectedItem="{Binding Logic}">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
@@ -32,8 +32,8 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="120"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Maximum"/>
-                    <TextBlock Grid.Row="1" Text="Minimum"/>
+                    <TextBlock Text="{DynamicResource Maximum}"/>
+                    <TextBlock Grid.Row="1" Text="{DynamicResource Minimum}"/>
                     <TextBox Grid.Column="1" Text="{Binding YMax, Converter={StaticResource PlainDouble}, ValidatesOnDataErrors=True}"/>
                     <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding YMin, Converter={StaticResource PlainDouble}, ValidatesOnDataErrors=True}"/>
                     <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding YUnitLabel}"/>
@@ -54,8 +54,8 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="120"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Maximum"/>
-                    <TextBlock Grid.Row="1" Text="Minimum"/>
+                    <TextBlock Text="{DynamicResource Maximum}"/>
+                    <TextBlock Grid.Row="1" Text="{DynamicResource Minimum}"/>
                     <TextBox Grid.Column="1" Text="{Binding XMax, Converter={StaticResource PlainDouble}, ValidatesOnDataErrors=True}"/>
                     <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding XMin, Converter={StaticResource PlainDouble}, ValidatesOnDataErrors=True}"/>
                     <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding XUnitLabel}"/>
@@ -75,7 +75,7 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="120"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="Constant value"/>
+                    <TextBlock Text="{DynamicResource Constant value}"/>
                     <TextBox Grid.Column="1" Text="{Binding ConstZ, Converter={StaticResource PlainDouble}, ValidatesOnDataErrors=True}"/>
                     <TextBlock Grid.Row="0" Grid.Column="2" Text="{Binding ZUnitLabel}"/>
                     <!--<uc:MultiplyDouble Margin="2,2,2,2" Grid.Column="3" ValueChanged="ConstZChanged"/>-->
@@ -90,7 +90,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition Width="120"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Point count"/>
+                <TextBlock Text="{DynamicResource Point count}"/>
                 <TextBox Grid.Column="1" Text="{Binding PointCount, ValidatesOnDataErrors=True}"/>
                 <!--<uc:MultiplyDouble Margin="2" Grid.Column="3" ValueChanged="PointCountChanged"/>-->
             </Grid>

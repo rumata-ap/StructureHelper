@@ -34,36 +34,36 @@
                     <ColumnDefinition Width="170"/>
                     <ColumnDefinition Width="170"/>
                 </Grid.ColumnDefinitions>
-                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Text="Координата X" Margin="10"/>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource CoordinateX}" Margin="10"/>
                 <TextBox Grid.Column="1" VerticalAlignment="Center" Margin="10" Text="{Binding ShowedX, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Координата Y" Margin="10"/>
+                <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource CoordinateY}" Margin="10"/>
                 <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="10" Text="{Binding ShowedY, Mode=TwoWay}"/>
                 <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{Binding PrimitiveDimension}" Margin="10"/>
                 <TextBox Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="10" Text="{Binding PrimitiveWidth, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Высота" Margin="10" Visibility="{Binding RectangleFieldVisibility}"/>
+                <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource Height}" Margin="10" Visibility="{Binding RectangleFieldVisibility}"/>
                 <TextBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Margin="10" Text="{Binding PrimitiveHeight, Mode=TwoWay}"  Visibility="{Binding RectangleFieldVisibility}"/>
-                <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Материал" Margin="10"/>
+                <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource MaterialPopup}" Margin="10"/>
                 <Button Grid.Row="4" Grid.Column="1" Margin="10" Background="White" 
                                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.OpenMaterialCatalogWithSelection}" CommandParameter="{Binding}"
                                     Content="{Binding MaterialName, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="Цвет"/>
+                <TextBlock Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="{DynamicResource ColorPopup}"/>
                 <Button Grid.Row="5" Grid.Column="1" Margin="10" Background="{Binding Brush, Mode=TwoWay}"
                                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.SetColor}" CommandParameter="{Binding}"/>
-                <TextBlock Grid.Row="6" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left" Text="Прозрачность"/>
+                <TextBlock Grid.Row="6" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Left" Text="{DynamicResource OpacityPopup}"/>
                 <TextBox Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" Margin="10,10,50,10" Text="{Binding ShowedOpacity, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="%" Margin="25,10"/>
-                <TextBlock Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="Заблокировать объект" Grid.ColumnSpan="2"/>
+                <TextBlock Grid.Row="6" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Text="{DynamicResource Percent}" Margin="25,10"/>
+                <TextBlock Grid.Row="7" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="{DynamicResource LockObject}" Grid.ColumnSpan="2"/>
                 <CheckBox Grid.Row="7" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" IsChecked="{Binding ElementLock, Mode=TwoWay}"/>
-                <TextBlock Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="Z-порядок"/>
+                <TextBlock Grid.Row="8" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10" Text="{DynamicResource ZOrder}"/>
                 <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal">
                     <TextBox VerticalAlignment="Center" HorizontalAlignment="Left" Width="50" Margin="10"
                                          Text="{Binding ShowedZIndex, Mode=TwoWay}"/>
-                    <TextBlock VerticalAlignment="Center" Text="Max = "/>
+                    <TextBlock VerticalAlignment="Center" Text="{DynamicResource MaxEquals}"/>
                     <TextBlock VerticalAlignment="Center" Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.PrimitivesCount}"/>
                 </StackPanel>
-                <Button Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Установить впереди всех" Margin="10"
+                <Button Grid.Row="9" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{DynamicResource SetInFrontOfAll}" Margin="10"
                                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.SetInFrontOfAll}" CommandParameter="{Binding}"/>
-                <Button Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Установить позади всех" Margin="10"
+                <Button Grid.Row="9" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="{DynamicResource SetInBackOfAll}" Margin="10"
                                     Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.SetInBackOfAll}" CommandParameter="{Binding}"/>
             </Grid>
         </Border>

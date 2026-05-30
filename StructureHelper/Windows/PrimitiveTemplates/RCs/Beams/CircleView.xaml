@@ -25,9 +25,9 @@
                     <ColumnDefinition Width="100"/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Row="0" Text="Cover gap"/>
-                <TextBlock Grid.Row="1" Text="Rebar Diameter"/>
-                <TextBlock Grid.Row="2" Text="Rebar Count"/>
+                <TextBlock Grid.Row="0" Text="{DynamicResource Cover gap}"/>
+                <TextBlock Grid.Row="1" Text="{DynamicResource Rebar Diameter}"/>
+                <TextBlock Grid.Row="2" Text="{DynamicResource Rebar Count}"/>
                 <TextBox Grid.Row="0" Grid.Column="1" Margin="1" Style="{StaticResource ValidatedError}" Text="{Binding CoverGap, Converter={StaticResource LengthConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Margin="1" Style="{StaticResource ValidatedError}" Text="{Binding BarDiameter, Converter={StaticResource LengthConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="2" Grid.Column="1" Margin="1" Style="{StaticResource ValidatedError}" Text="{Binding BarCount, ValidatesOnExceptions=True}"/>

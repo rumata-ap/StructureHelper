@@ -16,9 +16,9 @@
             <RowDefinition Height="Auto" MinHeight="20"/>
             <RowDefinition Height="Auto" MinHeight="20"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Center" Text="Mx"/>
-        <TextBlock HorizontalAlignment="Center" Grid.Column="1" Text="My"/>
-        <TextBlock HorizontalAlignment="Center" Grid.Column="2" Text="Nz"/>
+        <TextBlock HorizontalAlignment="Center" Text="{DynamicResource Moment Mx}"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="1" Text="{DynamicResource Moment My}"/>
+        <TextBlock HorizontalAlignment="Center" Grid.Column="2" Text="{DynamicResource Force Nz}"/>
         <TextBox Grid.Row="1" Text=""/>
         <TextBox Grid.Row="1" Grid.Column="1" Text=""/>
         <TextBox Grid.Row="1" Grid.Column="2" Text=""/>

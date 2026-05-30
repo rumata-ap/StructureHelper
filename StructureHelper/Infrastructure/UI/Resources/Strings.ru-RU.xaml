@@ -3,331 +3,380 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
       xmlns:system="clr-namespace:System;assembly=mscorlib">
 
-    <system:String x:Key="Actions">Действия</system:String>
-    <system:String x:Key="Geometry">Геометрия</system:String>
-    <system:String x:Key="Materials">Материалы</system:String>
-    <system:String x:Key="Add">Добавить</system:String>
-    <system:String x:Key="Change Language">Изменить язык</system:String>
-    <system:String x:Key="RU_EN">RU</system:String>
-    
-    <!-- Main Menu -->
-    <system:String x:Key="File">Файл</system:String>
-    <system:String x:Key="Edit">Правка</system:String>
-    <system:String x:Key="Primitives">Элементы</system:String>
-    <system:String x:Key="Templates">Шаблоны</system:String>
-    <system:String x:Key="Tools">Инструменты</system:String>
-    <system:String x:Key="Help">Помощь</system:String>
-    
-    <!-- Context Menu Items -->
-    <system:String x:Key="Copy">Копировать</system:String>
-    <system:String x:Key="Delete">Удалить</system:String>
-    <system:String x:Key="To Foreground">На передний план</system:String>
-    <system:String x:Key="To Background">На задний план</system:String>
-    <system:String x:Key="Run">Запустить</system:String>
-    
-    <!-- Toolbar Buttons -->
-    <system:String x:Key="Full">Полная</system:String>
-    <system:String x:Key="Fact">По факторам</system:String>
-    <system:String x:Key="Add Full Combination">Добавить полную комбинацию</system:String>
-    <system:String x:Key="Add Factored Combination">Добавить комбинацию по факторам</system:String>
-    
-    <!-- Materials -->
-    <system:String x:Key="Concrete">Бетон</system:String>
-    <system:String x:Key="Reinforcement">Арматура</system:String>
-    <system:String x:Key="Elastic">Упругий</system:String>
-    <system:String x:Key="CarbonFiber">Углеволокно</system:String>
-    <system:String x:Key="GlassFiber">Стекловолокно</system:String>
-    <system:String x:Key="Show Materials">Показать материалы</system:String>
-    <system:String x:Key="Add Reinforcement Material">Добавить материал арматуры</system:String>
-    <system:String x:Key="Add Elastic Material">Добавить упругий материал</system:String>
-    <system:String x:Key="Add Carbon Fiber Material">Добавить материал углеволокна</system:String>
-    <system:String x:Key="Add Glass Fiber Material">Добавить материал стекловолокна</system:String>
-    
-    <!-- Primitives -->
-    <system:String x:Key="Rectangle">Прямоугольник</system:String>
-    <system:String x:Key="Circle">Круг</system:String>
-    <system:String x:Key="Rebar">Стержень</system:String>
-    <system:String x:Key="Point">Точка</system:String>
-    <system:String x:Key="Add Rectangle Primitive">Добавить прямоугольник</system:String>
-    <system:String x:Key="Add Circle Primitive">Добавить круг</system:String>
-    <system:String x:Key="Add Rebar Primitive">Добавить стержень</system:String>
-    <system:String x:Key="Add Point Primitive">Добавить точку</system:String>
-    
-    <!-- RC Templates -->
-    <system:String x:Key="Add Rectangle RC Column">Добавить прямоугольную ж/б колонну</system:String>
-    <system:String x:Key="Add Circle RC Column">Добавить круглую ж/б колонну</system:String>
-    <system:String x:Key="Add RC Beam">Добавить ж/б балку</system:String>
-    <system:String x:Key="Add RC Slab">Добавить ж/б плиту</system:String>
-    <system:String x:Key="Concrete beam">Бетонная балка</system:String>
-    <system:String x:Key="Concrete column">Бетонная колонна</system:String>
-    <system:String x:Key="Concrete slab">Бетонная плита</system:String>
-    <system:String x:Key="Concrete circle">Бетонный круг</system:String>
-    
-    <!-- Analysis -->
-    <system:String x:Key="Analisis">Расчет</system:String>
-    <system:String x:Key="Add Force Calculator">Добавить калькулятор усилий</system:String>
-    <system:String x:Key="Add Interaction Diagram Calculator">Добавить калькулятор диаграммы взаимодействия</system:String>
-    <system:String x:Key="Run Calculations">Запустить расчеты</system:String>
-    <system:String x:Key="Move All Primitives to Gravity Center">Переместить все элементы к центру тяжести</system:String>
-    <system:String x:Key="Visual Settings">Визуальные настройки</system:String>
-    
-    <!-- Status Bar -->
-    <system:String x:Key="Zoom">Масштаб:</system:String>
-    <system:String x:Key="Number of primitives">Количество элементов:</system:String>
-    <system:String x:Key="Grid size">Размер сетки:</system:String>
-    
-    <!-- Calculation Views -->
-    <system:String x:Key="General">Общие</system:String>
-    <system:String x:Key="Limit States">Предельные состояния</system:String>
-    <system:String x:Key="Duration">Длительность</system:String>
-    <system:String x:Key="Forces">Усилия</system:String>
-    <system:String x:Key="S-Order">Порядок S</system:String>
-    <system:String x:Key="Iterations">Итерации</system:String>
-    <system:String x:Key="Limits">Пределы</system:String>
-    <system:String x:Key="Predicates">Предикаты</system:String>
-    <system:String x:Key="States">Состояния</system:String>
-    <system:String x:Key="Terms">Условия</system:String>
-    
-    <!-- DataGrid Headers -->
-    <system:String x:Key="Valid">Действительно</system:String>
-    <system:String x:Key="LimitState">Предельное состояние</system:String>
-    <system:String x:Key="Moment Mx">Момент Mx</system:String>
-    <system:String x:Key="Moment My">Момент My</system:String>
-    <system:String x:Key="Force Nz">Сила Nz</system:String>
-    <system:String x:Key="Kx">Kx</system:String>
-    <system:String x:Key="Ky">Ky</system:String>
-    <system:String x:Key="EpsZ">EpsZ</system:String>
-    <system:String x:Key="Accuracy">Точность</system:String>
-    <system:String x:Key="Max Iteration">Макс. итераций</system:String>
-    <system:String x:Key="Description">Описание</system:String>
-    <system:String x:Key="Name">Имя</system:String>
-    <system:String x:Key="Color">Цвет</system:String>
-    <system:String x:Key="Short">Краткое</system:String>
-    <system:String x:Key="Unit">Ед. изм.</system:String>
-    <system:String x:Key="Value">Значение</system:String>
-    
-    <!-- Graph Views -->
-    <system:String x:Key="X-axis values">Значения оси X</system:String>
-    <system:String x:Key="Y-axis values">Значения оси Y</system:String>
-    <system:String x:Key="Calculation terms">Условия расчета</system:String>
-    
-    <!-- Primitive Properties -->
-    <system:String x:Key="Main">Основные</system:String>
-    <system:String x:Key="Common properties">Общие свойства</system:String>
-    <system:String x:Key="Prestrain">Предварительная деформация</system:String>
-    <system:String x:Key="Visual">Визуальные</system:String>
-    
-    <!-- Progress Views -->
-    <system:String x:Key="Tab gap">Интервал вкладки</system:String>
-    <system:String x:Key="Max priority">Макс. приоритет</system:String>
-    
-    <!-- Error Messages -->
-    <system:String x:Key="Short information">Краткая информация</system:String>
-    <system:String x:Key="Detailed Information">Подробная информация</system:String>
-    
-    <!-- Copy Service -->
-    <system:String x:Key="Coordinates">Координаты</system:String>
-    <system:String x:Key="Relative coordinates">Относительные координаты</system:String>
-    <system:String x:Key="Copy count">Количество копий</system:String>
-    
-    <!-- Multiply Buttons -->
-    <system:String x:Key="*-1">*-1</system:String>
-    <system:String x:Key="*0">*0</system:String>
-    <system:String x:Key="*0.5">*0.5</system:String>
-    <system:String x:Key="*2.0">*2.0</system:String>
-    <system:String x:Key="*(-1)">*(-1)</system:String>
-    <system:String x:Key="*0.1">*0.1</system:String>
-    <system:String x:Key="*10.0">*10.0</system:String>
-    
-    <!-- Window Titles -->
-    <system:String x:Key="Reinforced rectangle template">Шаблон армированного прямоугольника</system:String>
-    <system:String x:Key="Reinforced circle template">Шаблон армированного круга</system:String>
-    
-    <!-- Edit Panels -->
-    <system:String x:Key="Edit primitive">Редактировать элемент</system:String>
-    <system:String x:Key="Delete primitive">Удалить элемент</system:String>
-    <system:String x:Key="Move primitives to center">Переместить элементы к центру</system:String>
-    <system:String x:Key="About...">О программе...</system:String>
-    <system:String x:Key="Settings">Настройки</system:String>
-    <system:String x:Key="Combination">Комбинация</system:String>
-    <system:String x:Key="Combination By Factors">Комбинация по факторам</system:String>
+   <system:String x:Key="Actions">Действия</system:String>
+   <system:String x:Key="Geometry">Геометрия</system:String>
+   <system:String x:Key="Materials">Материалы</system:String>
+   <system:String x:Key="Add">Добавить</system:String>
+   <system:String x:Key="Change Language">Изменить язык</system:String>
+   <system:String x:Key="RU_EN">RU</system:String>
 
-    <!-- Material Properties -->
-    <system:String x:Key="Material properties">Свойства материала</system:String>
-    <system:String x:Key="Material Code">Код материала</system:String>
-    <system:String x:Key="Code short name:">Краткое имя кода:</system:String>
-    <system:String x:Key="Full name:">Полное имя:</system:String>
-    <system:String x:Key="Material Kind">Вид материала</system:String>
-    <system:String x:Key="Material Model">Модель материала</system:String>
-    <system:String x:Key="ULS Concrete Strength">Прочность бетона ПС</system:String>
-    <system:String x:Key="Total Layers Thickness">Общая толщина слоев</system:String>
-    <system:String x:Key="GammaF2 Factor">Коэффициент GammaF2</system:String>
-    <system:String x:Key="Library material">Библиотечный материал</system:String>
-    <system:String x:Key="Tension for ULS">Растяжение для ПС</system:String>
-    <system:String x:Key="Tension for SLS">Растяжение для ПЭ</system:String>
-    <system:String x:Key="Relative humidity">Относительная влажность</system:String>
-    <system:String x:Key="Elastic material">Упругий материал</system:String>
-    <system:String x:Key="Young's modulus">Модуль упругости</system:String>
-    <system:String x:Key="Compressive strength">Прочность на сжатие</system:String>
-    <system:String x:Key="Tensile strength">Прочность на растяжение</system:String>
+   <!-- Main Menu -->
+   <system:String x:Key="File">Файл</system:String>
+   <system:String x:Key="Edit">Правка</system:String>
+   <system:String x:Key="Primitives">Элементы</system:String>
+   <system:String x:Key="Templates">Шаблоны</system:String>
+   <system:String x:Key="Tools">Инструменты</system:String>
+   <system:String x:Key="Help">Помощь</system:String>
 
-    <!-- Force Properties -->
-    <system:String x:Key="Set force into initial Gravity Center">Приложить усилие к начальному центру тяжести</system:String>
-    <system:String x:Key="Center X">Центр X</system:String>
-    <system:String x:Key="Center Y">Центр Y</system:String>
+   <!-- Context Menu Items -->
+   <system:String x:Key="Copy">Копировать</system:String>
+   <system:String x:Key="Delete">Удалить</system:String>
+   <system:String x:Key="To Foreground">На передний план</system:String>
+   <system:String x:Key="To Background">На задний план</system:String>
+   <system:String x:Key="Run">Запустить</system:String>
 
-    <!-- Limit Curve -->
-    <system:String x:Key="Logic">Логика</system:String>
-    <system:String x:Key="Maximum">Максимум</system:String>
-    <system:String x:Key="Minimum">Минимум</system:String>
-    <system:String x:Key="Constant value">Постоянное значение</system:String>
-    <system:String x:Key="Point count">Количество точек</system:String>
+   <!-- Toolbar Buttons -->
+   <system:String x:Key="Full">Полная</system:String>
+   <system:String x:Key="Fact">По факторам</system:String>
+   <system:String x:Key="Add Full Combination">Добавить полную комбинацию</system:String>
+   <system:String x:Key="Add Factored Combination">Добавить комбинацию по факторам</system:String>
 
-    <!-- Shape Edit -->
-    <system:String x:Key="Width">Ширина</system:String>
-    <system:String x:Key="Height">Высота</system:String>
-    <system:String x:Key="Diameter">Диаметр</system:String>
+   <!-- Materials -->
+   <system:String x:Key="Concrete">Бетон</system:String>
+   <system:String x:Key="Reinforcement">Арматура</system:String>
+   <system:String x:Key="Elastic">Упругий</system:String>
+   <system:String x:Key="CarbonFiber">Углеволокно</system:String>
+   <system:String x:Key="GlassFiber">Стекловолокно</system:String>
+   <system:String x:Key="Show Materials">Показать материалы</system:String>
+   <system:String x:Key="Add Reinforcement Material">Добавить материал арматуры</system:String>
+   <system:String x:Key="Add Elastic Material">Добавить упругий материал</system:String>
+   <system:String x:Key="Add Carbon Fiber Material">Добавить материал углеволокна</system:String>
+   <system:String x:Key="Add Glass Fiber Material">Добавить материал стекловолокна</system:String>
 
-    <!-- Primitive ToolTips -->
-    <system:String x:Key="Name: ">Имя: </system:String>
-    <system:String x:Key="Material Name: ">Имя материала: </system:String>
-    <system:String x:Key="Center X: ">Центр X: </system:String>
-    <system:String x:Key="Center Y: ">Центр Y: </system:String>
-    <system:String x:Key="Width: ">Ширина: </system:String>
-    <system:String x:Key="Height: ">Высота: </system:String>
-    <system:String x:Key="Area: ">Площадь: </system:String>
-    <system:String x:Key="Area">Площадь</system:String>
+   <!-- Primitives -->
+   <system:String x:Key="Rectangle">Прямоугольник</system:String>
+   <system:String x:Key="Circle">Круг</system:String>
+   <system:String x:Key="Rebar">Стержень</system:String>
+   <system:String x:Key="Point">Точка</system:String>
+   <system:String x:Key="Add Rectangle Primitive">Добавить прямоугольник</system:String>
+   <system:String x:Key="Add Circle Primitive">Добавить круг</system:String>
+   <system:String x:Key="Add Rebar Primitive">Добавить стержень</system:String>
+   <system:String x:Key="Add Point Primitive">Добавить точку</system:String>
 
-    <!-- Graph Templates -->
-    <system:String x:Key="Line properties">Свойства линии</system:String>
-    <system:String x:Key="Line smoothness">Сглаживание линии</system:String>
-    <system:String x:Key="Stroke thickness">Толщина штриха</system:String>
-    <system:String x:Key="Filling opacity">Непрозрачность заполнения</system:String>
+   <!-- RC Templates -->
+   <system:String x:Key="Add Rectangle RC Column">Добавить прямоугольную ж/б колонну</system:String>
+   <system:String x:Key="Add Circle RC Column">Добавить круглую ж/б колонну</system:String>
+   <system:String x:Key="Add RC Beam">Добавить ж/б балку</system:String>
+   <system:String x:Key="Add RC Slab">Добавить ж/б плиту</system:String>
+   <system:String x:Key="Concrete beam">Бетонная балка</system:String>
+   <system:String x:Key="Concrete column">Бетонная колонна</system:String>
+   <system:String x:Key="Concrete slab">Бетонная плита</system:String>
+   <system:String x:Key="Concrete circle">Бетонный круг</system:String>
 
-    <!-- Window Titles and Messages -->
-    <system:String x:Key="Interpolate Combinations">Интерполировать комбинации</system:String>
-    <system:String x:Key="Force Combination">Комбинация усилий</system:String>
-    <system:String x:Key="Force Combination By Factor">Комбинация усилий по фактору</system:String>
-    <system:String x:Key="Trace Document Viewer">Просмотр трассировки документа</system:String>
-    <system:String x:Key="Analysis by forces">Расчет по усилиям</system:String>
-    <system:String x:Key="Diagram properties">Свойства диаграммы</system:String>
-    <system:String x:Key="Interaction Diagram Calculator">Калькулятор диаграммы взаимодействия</system:String>
-    <system:String x:Key="Calculation Results">Результаты расчета</system:String>
-    <system:String x:Key="Set Prestrain">Задать предварительную деформацию</system:String>
-    <system:String x:Key="Geometry Properies">Свойства геометрии</system:String>
-    <system:String x:Key="Array">Массив</system:String>
-    <system:String x:Key="Structure Helper">Structure Helper</system:String>
-    <system:String x:Key="StructureHelper">Structure Helper</system:String>
-    <system:String x:Key="Grid properies">Свойства сетки</system:String>
-    <system:String x:Key="Material Partial Factors">Частные коэффициенты материала</system:String>
-    <system:String x:Key="Material Safety Factors">Коэффициенты надежности материала</system:String>
-    <system:String x:Key="Graph">График</system:String>
-    <system:String x:Key="Material Diagram">Диаграмма материала</system:String>
-    <system:String x:Key="Select Primitives">Выбрать элементы</system:String>
-    <system:String x:Key="PrimitiveProperties">Свойства элемента</system:String>
-    <system:String x:Key="Error Message">Сообщение об ошибке</system:String>
+   <!-- Analysis -->
+   <system:String x:Key="Analysis">Расчет</system:String>
+   <system:String x:Key="Add Force Calculator">Добавить калькулятор усилий</system:String>
+   <system:String x:Key="Add Interaction Diagram Calculator">Добавить калькулятор диаграммы взаимодействия</system:String>
+   <system:String x:Key="Run Calculations">Запустить расчеты</system:String>
+   <system:String x:Key="Move All Primitives to Gravity Center">Переместить все элементы к центру тяжести</system:String>
+   <system:String x:Key="Visual Settings">Визуальные настройки</system:String>
 
-    <!-- Progress Views -->
-    <system:String x:Key="Progress">Прогресс</system:String>
-    <system:String x:Key="Total step">Всего шагов</system:String>
-    <system:String x:Key="Current step">Текущий шаг</system:String>
+   <!-- Status Bar -->
+   <system:String x:Key="Zoom">Масштаб:</system:String>
+   <system:String x:Key="Number of primitives">Количество элементов:</system:String>
+   <system:String x:Key="Grid size">Размер сетки:</system:String>
 
-    <!-- About View -->
-    <system:String x:Key="Authors">Авторы</system:String>
-    <system:String x:Key="Version">Версия</system:String>
-    <system:String x:Key="Copy Right (c) Redikultsev Evgeny">Авторские права (c) Редикульцев Евгений</system:String>
-    <system:String x:Key="Happened something wrong">Что-то пошло не так</system:String>
+   <!-- Calculation Views -->
+   <system:String x:Key="General">Общие</system:String>
+   <system:String x:Key="Limit States">Предельные состояния</system:String>
+   <system:String x:Key="Duration">Длительность</system:String>
+   <system:String x:Key="Forces">Усилия</system:String>
+   <system:String x:Key="S-Order">Порядок S</system:String>
+   <system:String x:Key="Iterations">Итерации</system:String>
+   <system:String x:Key="Limits">Пределы</system:String>
+   <system:String x:Key="Predicates">Предикаты</system:String>
+   <system:String x:Key="States">Состояния</system:String>
+   <system:String x:Key="Terms">Условия</system:String>
 
-    <!-- Visual Properties -->
-    <system:String x:Key="Axis grid thickness">Толщина оси сетки</system:String>
-    <system:String x:Key="Mesh size">Размер сетки</system:String>
+   <!-- DataGrid Headers -->
+   <system:String x:Key="Valid">Действительно</system:String>
+   <system:String x:Key="LimitState">Предельное состояние</system:String>
+   <system:String x:Key="Moment Mx">Момент Mx</system:String>
+   <system:String x:Key="Moment My">Момент My</system:String>
+   <system:String x:Key="Force Nz">Сила Nz</system:String>
+   <system:String x:Key="Kx">Kx</system:String>
+   <system:String x:Key="Ky">Ky</system:String>
+   <system:String x:Key="EpsZ">EpsZ</system:String>
+   <system:String x:Key="Accuracy">Точность</system:String>
+   <system:String x:Key="Max Iteration">Макс. итераций</system:String>
+   <system:String x:Key="Description">Описание</system:String>
+   <system:String x:Key="Name">Имя</system:String>
+   <system:String x:Key="Color">Цвет</system:String>
+   <system:String x:Key="Short">Краткое</system:String>
+   <system:String x:Key="Unit">Ед. изм.</system:String>
+   <system:String x:Key="Value">Значение</system:String>
 
-    <!-- RC Templates -->
-    <system:String x:Key="Cover gap">Защитный слой</system:String>
-    <system:String x:Key="Top Diameter">Диаметр верхней арматуры</system:String>
-    <system:String x:Key="Bottom Diameter">Диаметр нижней арматуры</system:String>
-    <system:String x:Key="Width count">Количество по ширине</system:String>
-    <system:String x:Key="Height count">Количество по высоте</system:String>
-    <system:String x:Key="Rebar Diameter">Диаметр арматуры</system:String>
-    <system:String x:Key="Rebar Count">Количество арматуры</system:String>
+   <!-- Graph Views -->
+   <system:String x:Key="X-axis values">Значения оси X</system:String>
+   <system:String x:Key="Y-axis values">Значения оси Y</system:String>
+   <system:String x:Key="Calculation terms">Условия расчета</system:String>
 
-    <!-- Material Diagram -->
-    <system:String x:Key="Minimum strain">Минимальная деформация</system:String>
-    <system:String x:Key="Maximum strain">Максимальная деформация</system:String>
-    <system:String x:Key="Step count">Количество шагов</system:String>
-    <system:String x:Key="Positive in tension">Положительное при растяжении</system:String>
+   <!-- Primitive Properties -->
+   <system:String x:Key="Main">Основные</system:String>
+   <system:String x:Key="Common properties">Общие свойства</system:String>
+   <system:String x:Key="Prestrain">Предварительная деформация</system:String>
+   <system:String x:Key="Visual">Визуальные</system:String>
 
-    <!-- Primitive Properties -->
-    <system:String x:Key="Host">Хост</system:String>
-    <system:String x:Key="Minimum element division">Минимальное деление элемента</system:String>
-    <system:String x:Key="Maximum element size">Максимальный размер элемента</system:String>
-    <system:String x:Key="Clear underlying">Очистить нижележащие</system:String>
-    <system:String x:Key="Name of material">Имя материала</system:String>
-    <system:String x:Key="Triangulate">Триангулировать</system:String>
-    <system:String x:Key="User's / Auto">Пользовательский / Авто</system:String>
-    <system:String x:Key="k_x">k_x</system:String>
-    <system:String x:Key="k_y">k_y</system:String>
-    <system:String x:Key="epsilon_z">epsilon_z</system:String>
-    <system:String x:Key="Visible">Видимый</system:String>
-    <system:String x:Key="Material color">Цвет материала</system:String>
-    <system:String x:Key="Z-index (integer)">Z-индекс (целое число)</system:String>
-    <system:String x:Key="Opacity">Непрозрачность</system:String>
+   <!-- Progress Views -->
+   <system:String x:Key="Tab gap">Интервал вкладки</system:String>
+   <system:String x:Key="Max priority">Макс. приоритет</system:String>
 
-    <!-- Copy Service -->
-    <system:String x:Key="Delta X">Дельта X</system:String>
-    <system:String x:Key="Delta Y">Дельта Y</system:String>
-    <system:String x:Key="Angle">Угол</system:String>
-    <system:String x:Key="Distance">Расстояние</system:String>
+   <!-- Error Messages -->
+   <system:String x:Key="Short information">Краткая информация</system:String>
+   <system:String x:Key="Detailed Information">Подробная информация</system:String>
 
-    <!-- Force Calculator -->
-    <system:String x:Key="Consider second order effects">Учитывать эффекты второго порядка</system:String>
-    <system:String x:Key="Geometry length">Длина геометрии</system:String>
-    <system:String x:Key="Buckling factor x-axis">Коэффициент продольного изгиба ось X</system:String>
-    <system:String x:Key="Buckling factor y-axis">Коэффициент продольного изгиба ось Y</system:String>
-    <system:String x:Key="Required Accuracy">Требуемая точность</system:String>
-    <system:String x:Key="Maximum Iteration Count">Максимальное количество итераций</system:String>
+   <!-- Copy Service -->
+   <system:String x:Key="Coordinates">Координаты</system:String>
+   <system:String x:Key="Relative coordinates">Относительные координаты</system:String>
+   <system:String x:Key="Copy count">Количество копий</system:String>
 
-    <!-- Interpolate -->
-    <system:String x:Key="Start Combination">Начальная комбинация</system:String>
-    <system:String x:Key="Finish Combination">Конечная комбинация</system:String>
-    <system:String x:Key="Full service load combination">Полная комбинация эксплуатационных нагрузок</system:String>
-    <system:String x:Key="Long Term factor">Коэффициент длительной нагрузки</system:String>
-    <system:String x:Key="ULS Safety Factor">Коэффициент безопасности ПС</system:String>
+   <!-- Multiply Buttons -->
+   <system:String x:Key="*-1">*-1</system:String>
+   <system:String x:Key="*0">*0</system:String>
+   <system:String x:Key="*0.5">*0.5</system:String>
+   <system:String x:Key="*2.0">*2.0</system:String>
+   <system:String x:Key="*(-1)">*(-1)</system:String>
+   <system:String x:Key="*0.1">*0.1</system:String>
+   <system:String x:Key="*10.0">*10.0</system:String>
 
-    <!-- Set Prestrain -->
-    <system:String x:Key="Set Auto-prestrain">Задать авто-предварительную деформацию</system:String>
-    <system:String x:Key="Coefficient">Коэффициент</system:String>
+   <!-- Window Titles -->
+   <system:String x:Key="Reinforced rectangle template">Шаблон армированного прямоугольника</system:String>
+   <system:String x:Key="Reinforced circle template">Шаблон армированного круга</system:String>
 
-    <!-- Visual Property View -->
-    <system:String x:Key="GridProperties">Свойства сетки</system:String>
-    <system:String x:Key="AxisGridThickness">Толщина осей сетки</system:String>
-    <system:String x:Key="MeshSize">Размер ячейки сетки</system:String>
+   <!-- Edit Panels -->
+   <system:String x:Key="Edit primitive">Редактировать элемент</system:String>
+   <system:String x:Key="Delete primitive">Удалить элемент</system:String>
+   <system:String x:Key="Move primitives to center">Переместить элементы к центру</system:String>
+   <system:String x:Key="About...">О программе...</system:String>
+   <system:String x:Key="Settings">Настройки</system:String>
+   <system:String x:Key="Combination">Комбинация</system:String>
+   <system:String x:Key="Combination By Factors">Комбинация по факторам</system:String>
 
-    <!-- Material Partial Factors -->
-    <system:String x:Key="MaterialPartialFactors">Частные коэффициенты материала</system:String>
-    <system:String x:Key="StressState">Напряженное состояние</system:String>
+   <!-- Material Properties -->
+   <system:String x:Key="Material properties">Свойства материала</system:String>
+   <system:String x:Key="Material Code">Код материала</system:String>
+   <system:String x:Key="Code short name:">Краткое имя кода:</system:String>
+   <system:String x:Key="Full name:">Полное имя:</system:String>
+   <system:String x:Key="Material Kind">Вид материала</system:String>
+   <system:String x:Key="Material Model">Модель материала</system:String>
+   <system:String x:Key="ULS Concrete Strength">Прочность бетона ПС</system:String>
+   <system:String x:Key="Total Layers Thickness">Общая толщина слоев</system:String>
+   <system:String x:Key="GammaF2 Factor">Коэффициент GammaF2</system:String>
+   <system:String x:Key="Library material">Библиотечный материал</system:String>
+   <system:String x:Key="Tension for ULS">Растяжение для ПС</system:String>
+   <system:String x:Key="Tension for SLS">Растяжение для ПЭ</system:String>
+   <system:String x:Key="Relative humidity">Относительная влажность</system:String>
+   <system:String x:Key="Elastic material">Упругий материал</system:String>
+   <system:String x:Key="YoungsModulus">Модуль упругости</system:String>
+   <system:String x:Key="Compressive strength">Прочность на сжатие</system:String>
+   <system:String x:Key="Tensile strength">Прочность на растяжение</system:String>
 
-    <!-- Primitive Popup (Russian already present, adding keys for consistency) -->
-    <system:String x:Key="Координата X">Координата X</system:String>
-    <system:String x:Key="Координата Y">Координата Y</system:String>
-    <system:String x:Key="Материал">Материал</system:String>
-    <system:String x:Key="Цвет">Цвет</system:String>
-    <system:String x:Key="Прозрачность">Прозрачность</system:String>
-    <system:String x:Key="Заблокировать объект">Заблокировать объект</system:String>
-    <system:String x:Key="Z-порядок">Z-порядок</system:String>
-    <system:String x:Key="Max =">Макс =</system:String>
-    <system:String x:Key="%">%</system:String>
+   <!-- Force Properties -->
+   <system:String x:Key="Set force into initial Gravity Center">Приложить усилие к начальному центру тяжести</system:String>
+   <system:String x:Key="Center X">Центр X</system:String>
+   <system:String x:Key="Center Y">Центр Y</system:String>
 
-    <!-- Additional translations for dialogs -->
-    <system:String x:Key="Copy To">Копировать в</system:String>
-    <system:String x:Key="Mx">Mx</system:String>
-    <system:String x:Key="My">My</system:String>
-    <system:String x:Key="Nz">Nz</system:String>
-    <system:String x:Key="Stress">Напряжение</system:String>
-    <system:String x:Key="Strain">Деформация</system:String>
-    <system:String x:Key="x-value">значение x</system:String>
-    <system:String x:Key="y-value">значение y</system:String>
-    <system:String x:Key="Ok">ОК</system:String>
-    <system:String x:Key="Cancel">Отмена</system:String>
+   <!-- Limit Curve -->
+   <system:String x:Key="Logic">Логика</system:String>
+   <system:String x:Key="Maximum">Максимум</system:String>
+   <system:String x:Key="Minimum">Минимум</system:String>
+   <system:String x:Key="Constant value">Постоянное значение</system:String>
+   <system:String x:Key="Point count">Количество точек</system:String>
+
+   <!-- Shape Edit -->
+   <system:String x:Key="Width">Ширина</system:String>
+   <system:String x:Key="Height">Высота</system:String>
+   <system:String x:Key="Diameter">Диаметр</system:String>
+
+   <!-- Primitive ToolTips -->
+   <system:String x:Key="Name: ">Имя:</system:String>
+   <system:String x:Key="Material Name: ">Имя материала:</system:String>
+   <system:String x:Key="Center X: ">Центр X:</system:String>
+   <system:String x:Key="Center Y: ">Центр Y:</system:String>
+   <system:String x:Key="Width: ">Ширина:</system:String>
+   <system:String x:Key="Height: ">Высота:</system:String>
+   <system:String x:Key="Area: ">Площадь:</system:String>
+   <system:String x:Key="Area">Площадь</system:String>
+
+   <!-- Graph Templates -->
+   <system:String x:Key="Line properties">Свойства линии</system:String>
+   <system:String x:Key="Line smoothness">Сглаживание линии</system:String>
+   <system:String x:Key="Stroke thickness">Толщина штриха</system:String>
+   <system:String x:Key="Filling opacity">Непрозрачность заполнения</system:String>
+
+   <!-- Window Titles and Messages -->
+   <system:String x:Key="Interpolate Combinations">Интерполировать комбинации</system:String>
+   <system:String x:Key="Force Combination">Комбинация усилий</system:String>
+   <system:String x:Key="Force Combination By Factor">Комбинация усилий по фактору</system:String>
+   <system:String x:Key="Trace Document Viewer">Просмотр трассировки документа</system:String>
+   <system:String x:Key="Analysis by forces">Расчет по усилиям</system:String>
+   <system:String x:Key="Diagram properties">Свойства диаграммы</system:String>
+   <system:String x:Key="Interaction Diagram Calculator">Калькулятор диаграммы взаимодействия</system:String>
+   <system:String x:Key="Calculation Results">Результаты расчета</system:String>
+   <system:String x:Key="Set Prestrain">Задать предварительную деформацию</system:String>
+   <system:String x:Key="Geometry Properties">Свойства геометрии</system:String>
+   <system:String x:Key="Array">Массив</system:String>
+   <system:String x:Key="Structure Helper">Structure Helper</system:String>
+   <system:String x:Key="StructureHelper">Structure Helper</system:String>
+   <system:String x:Key="Grid Properties">Свойства сетки</system:String>
+   <system:String x:Key="Material Partial Factors">Частные коэффициенты материала</system:String>
+   <system:String x:Key="Material Safety Factors">Коэффициенты надежности материала</system:String>
+   <system:String x:Key="Graph">График</system:String>
+   <system:String x:Key="Material Diagram">Диаграмма материала</system:String>
+   <system:String x:Key="Select Primitives">Выбрать элементы</system:String>
+   <system:String x:Key="PrimitiveProperties">Свойства элемента</system:String>
+   <system:String x:Key="Error Message">Сообщение об ошибке</system:String>
+
+   <!-- Progress Views -->
+   <system:String x:Key="Progress">Прогресс</system:String>
+   <system:String x:Key="Total step">Всего шагов</system:String>
+   <system:String x:Key="Current step">Текущий шаг</system:String>
+
+   <!-- About View -->
+   <system:String x:Key="Authors">Авторы</system:String>
+   <system:String x:Key="Version">Версия</system:String>
+   <system:String x:Key="Copy Right (c) Redikultsev Evgeny">Авторские права (c) Редикульцев Евгений</system:String>
+   <system:String x:Key="Happened something wrong">Что-то пошло не так</system:String>
+
+   <!-- Visual Properties -->
+   <system:String x:Key="Axis grid thickness">Толщина оси сетки</system:String>
+   <system:String x:Key="Mesh size">Размер сетки</system:String>
+
+   <!-- RC Templates -->
+   <system:String x:Key="Cover gap">Защитный слой</system:String>
+   <system:String x:Key="Top Diameter">Диаметр верхней арматуры</system:String>
+   <system:String x:Key="Bottom Diameter">Диаметр нижней арматуры</system:String>
+   <system:String x:Key="Width count">Количество по ширине</system:String>
+   <system:String x:Key="Height count">Количество по высоте</system:String>
+   <system:String x:Key="Rebar Diameter">Диаметр арматуры</system:String>
+   <system:String x:Key="Rebar Count">Количество арматуры</system:String>
+
+   <!-- Material Diagram -->
+   <system:String x:Key="Minimum strain">Минимальная деформация</system:String>
+   <system:String x:Key="Maximum strain">Максимальная деформация</system:String>
+   <system:String x:Key="Step count">Количество шагов</system:String>
+   <system:String x:Key="Positive in tension">Положительное при растяжении</system:String>
+
+   <!-- Primitive Properties -->
+   <system:String x:Key="Host">Хост</system:String>
+   <system:String x:Key="Minimum element division">Минимальное деление элемента</system:String>
+   <system:String x:Key="Maximum element size">Максимальный размер элемента</system:String>
+   <system:String x:Key="Clear underlying">Очистить нижележащие</system:String>
+   <system:String x:Key="Name of material">Имя материала</system:String>
+   <system:String x:Key="Triangulate">Триангулировать</system:String>
+   <system:String x:Key="User's / Auto">Пользовательский / Авто</system:String>
+   <system:String x:Key="k_x">k_x</system:String>
+   <system:String x:Key="k_y">k_y</system:String>
+   <system:String x:Key="epsilon_z">epsilon_z</system:String>
+   <system:String x:Key="Visible">Видимый</system:String>
+   <system:String x:Key="Material color">Цвет материала</system:String>
+   <system:String x:Key="Z-index (integer)">Z-индекс (целое число)</system:String>
+   <system:String x:Key="Opacity">Непрозрачность</system:String>
+
+   <!-- Copy Service -->
+   <system:String x:Key="Delta X">Дельта X</system:String>
+   <system:String x:Key="Delta Y">Дельта Y</system:String>
+   <system:String x:Key="Angle">Угол</system:String>
+   <system:String x:Key="Distance">Расстояние</system:String>
+
+   <!-- Force Calculator -->
+   <system:String x:Key="Consider second order effects">Учитывать эффекты второго порядка</system:String>
+   <system:String x:Key="Geometry length">Длина геометрии</system:String>
+   <system:String x:Key="Buckling factor x-axis">Коэффициент продольного изгиба ось X</system:String>
+   <system:String x:Key="Buckling factor y-axis">Коэффициент продольного изгиба ось Y</system:String>
+   <system:String x:Key="Required Accuracy">Требуемая точность</system:String>
+   <system:String x:Key="Maximum Iteration Count">Максимальное количество итераций</system:String>
+
+   <!-- Interpolate -->
+   <system:String x:Key="Start Combination">Начальная комбинация</system:String>
+   <system:String x:Key="Finish Combination">Конечная комбинация</system:String>
+   <system:String x:Key="Full service load combination">Полная комбинация эксплуатационных нагрузок</system:String>
+   <system:String x:Key="Long Term factor">Коэффициент длительной нагрузки</system:String>
+   <system:String x:Key="ULS Safety Factor">Коэффициент безопасности ПС</system:String>
+
+   <!-- Set Prestrain -->
+   <system:String x:Key="Set Auto-prestrain">Задать авто-предварительную деформацию</system:String>
+   <system:String x:Key="Coefficient">Коэффициент</system:String>
+
+   <!-- Visual Property View -->
+   <system:String x:Key="GridProperties">Свойства сетки</system:String>
+   <system:String x:Key="AxisGridThickness">Толщина осей сетки</system:String>
+   <system:String x:Key="MeshSize">Размер ячейки сетки</system:String>
+
+   <!-- Material Partial Factors -->
+   <system:String x:Key="MaterialPartialFactors">Частные коэффициенты материала</system:String>
+   <system:String x:Key="StressState">Напряженное состояние</system:String>
+
+   <!-- Primitive Popup (Russian keys renamed to English) -->
+   <system:String x:Key="CoordinateX">Координата X</system:String>
+   <system:String x:Key="CoordinateY">Координата Y</system:String>
+   <system:String x:Key="MaterialPopup">Материал</system:String>
+   <system:String x:Key="ColorPopup">Цвет</system:String>
+   <system:String x:Key="OpacityPopup">Прозрачность</system:String>
+   <system:String x:Key="LockObject">Заблокировать объект</system:String>
+   <system:String x:Key="ZOrder">Z-порядок</system:String>
+   <system:String x:Key="MaxEquals">Макс =</system:String>
+   <system:String x:Key="Percent">%</system:String>
+   <system:String x:Key="SetInFrontOfAll">Установить впереди всех</system:String>
+   <system:String x:Key="SetInBackOfAll">Установить позади всех</system:String>
+
+   <!-- Additional translations for dialogs -->
+   <system:String x:Key="Copy To">Копировать в</system:String>
+   <system:String x:Key="Mx">Mx</system:String>
+   <system:String x:Key="My">My</system:String>
+   <system:String x:Key="Nz">Nz</system:String>
+   <system:String x:Key="Stress">Напряжение</system:String>
+   <system:String x:Key="Strain">Деформация</system:String>
+   <system:String x:Key="x-value">значение x</system:String>
+   <system:String x:Key="y-value">значение y</system:String>
+   <system:String x:Key="Ok">ОК</system:String>
+   <system:String x:Key="Cancel">Отмена</system:String>
+
+   <!-- Additional UI strings -->
+   <system:String x:Key="Draw Lines">Рисовать линии</system:String>
+   <system:String x:Key="Show Areas">Показать площадь</system:String>
+   <system:String x:Key="Show diagram">Показать диаграмму</system:String>
+   <system:String x:Key="Partial frs">Частные коэф.</system:String>
+   <system:String x:Key="Rebuild">Перестроить</system:String>
+   <system:String x:Key="ZoomIn">Увеличить</system:String>
+   <system:String x:Key="ZoomOut">Уменьшить</system:String>
+   <system:String x:Key="ColorMap">Цветовая карта</system:String>
+   <system:String x:Key="Minimum Value">Минимальное значение</system:String>
+   <system:String x:Key="Maximum Value">Максимальное значение</system:String>
+   <system:String x:Key="Set custom colors">Задать цвета</system:String>
+   <system:String x:Key="Set section line">Задать сечение</system:String>
+   <system:String x:Key="Invert Values">Инвертировать значения</system:String>
+   <system:String x:Key="Print">Печать</system:String>
+   <system:String x:Key="Add all">Добавить все</system:String>
+   <system:String x:Key="Clear all">Очистить все</system:String>
+   <system:String x:Key="Ultimate Limit State">Предельное состояние по несущей способности</system:String>
+   <system:String x:Key="Serviceability Limit State">Предельное состояние по эксплуатационной пригодности</system:String>
+   <system:String x:Key="Short Term">Кратковременная</system:String>
+   <system:String x:Key="Long Term">Длительная</system:String>
+   <system:String x:Key="Export">Экспорт</system:String>
+   <system:String x:Key="Graphic">График</system:String>
+   <system:String x:Key="CrcDiagrams">Диаграммы трещин</system:String>
+   <system:String x:Key="Anchorage">Анкеровка</system:String>
+   <system:String x:Key="Acrc">Трещины</system:String>
+   <system:String x:Key="Select All">Выбрать все</system:String>
+   <system:String x:Key="Unselect All">Отменить выбор</system:String>
+   <system:String x:Key="Invert Selection">Инвертировать выбор</system:String>
+   <system:String x:Key="Show Safety Factors">Показать коэффициенты надежности</system:String>
+   <system:String x:Key="Show Partial Factors">Показать частные коэффициенты</system:String>
+   <system:String x:Key="Draw Lines ToolTip">Рисовать линии</system:String>
+   <system:String x:Key="Color legend">Легенда цвета</system:String>
+   <system:String x:Key="Summary information">Сводная информация</system:String>
+   <system:String x:Key="Total area">Общая площадь</system:String>
+   <system:String x:Key="Negative value area">Площадь отрицательных значений</system:String>
+   <system:String x:Key="Zero value area">Площадь нулевых значений</system:String>
+   <system:String x:Key="Positive value area">Площадь положительных значений</system:String>
+   <system:String x:Key="Total sum">Общая сумма</system:String>
+   <system:String x:Key="Sum negative">Сумма отрицательных</system:String>
+   <system:String x:Key="Sum positive">Сумма положительных</system:String>
+   <system:String x:Key="Summary section">Сечение</system:String>
+   <system:String x:Key="X-distance">Расстояние по X</system:String>
+   <system:String x:Key="Y-distance">Расстояние по Y</system:String>
+   <system:String x:Key="Sum above line">Сумма выше линии</system:String>
+   <system:String x:Key="Sum under line">Сумма под линией</system:String>
 
 </ResourceDictionary> 

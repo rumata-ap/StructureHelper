@@ -18,11 +18,11 @@
             <RowDefinition/>
             <RowDefinition Height="40"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Authors"/>
+        <TextBlock Text="{DynamicResource Authors}"/>
         <TextBlock Grid.Row="1" Text="{Binding Authors}"/>
-        <TextBlock Grid.Row="2" Text="Version"/>
+        <TextBlock Grid.Row="2" Text="{DynamicResource Version}"/>
         <TextBlock Grid.Row="3" Text="{Binding Version}"/>
-        <TextBlock Grid.Row="4" Text="Copy Right (c) Redikultsev Evgeny"/>
+        <TextBlock Grid.Row="4" Text="{DynamicResource Copy Right (c) Redikultsev Evgeny}"/>
         <Button Grid.Row="6" Style="{StaticResource OkButton}" Click="Button_Click"/>
     </Grid>
 </Window>

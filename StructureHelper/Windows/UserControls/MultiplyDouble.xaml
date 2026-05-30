@@ -13,10 +13,10 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="MultyM1_2" Grid.Column="0" Content="*-1" Click="MultyM1_2_Click"/>
-        <Button x:Name="Multy0_0" Grid.Column="1" Content="*0" Click="Multy0_Click"/>
-        <Button x:Name="Multy0_5" Grid.Column="2" Content="*0.5" Click="Multy0_5_Click"/>
-        <Button x:Name="Multy2_0" Grid.Column="3" Content="*2.0"  Click="Multy2_0_Click"/>
+        <Button x:Name="MultyM1_2" Grid.Column="0" Content="{DynamicResource *-1}" Click="MultyM1_2_Click"/>
+        <Button x:Name="Multy0_0" Grid.Column="1" Content="{DynamicResource *0}" Click="Multy0_Click"/>
+        <Button x:Name="Multy0_5" Grid.Column="2" Content="{DynamicResource *0.5}" Click="Multy0_5_Click"/>
+        <Button x:Name="Multy2_0" Grid.Column="3" Content="{DynamicResource *2.0}"  Click="Multy2_0_Click"/>
         <!--<Grid.ToolTip>
             <StackPanel Orientation="Horizontal">
                 <Button x:Name="MultyM1_2" Grid.Column="1" Content="*(-1)"  Click="MultyM1_2_Click"/>

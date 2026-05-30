@@ -23,15 +23,15 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
-                    <TextBlock Text="Name: " FontWeight="Bold"/>
+                    <TextBlock Text="{DynamicResource Name: }" FontWeight="Bold"/>
                     <TextBlock Grid.Column="1" Text="{Binding Name}" FontWeight="Bold"/>
-                    <TextBlock Grid.Row="1" Text="Material Name: " FontWeight="Bold"/>
+                    <TextBlock Grid.Row="1" Text="{DynamicResource Material Name: }" FontWeight="Bold"/>
                     <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding HeadMaterial.Name}" FontWeight="Bold"/>
-                    <TextBlock Grid.Row="2" Text="Center X: "/>
+                    <TextBlock Grid.Row="2" Text="{DynamicResource Center X: }"/>
                     <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding CenterX, Converter={StaticResource LengthConverter}}"/>
-                    <TextBlock Grid.Row="3" Text="Center Y: "/>
+                    <TextBlock Grid.Row="3" Text="{DynamicResource Center Y: }"/>
                     <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding CenterY, Converter={StaticResource LengthConverter}}"/>
-                    <TextBlock Grid.Row="4" Text="Area: "/>
+                    <TextBlock Grid.Row="4" Text="{DynamicResource Area: }"/>
                     <TextBlock Grid.Row="4" Grid.Column="1" Text="{Binding Area, Converter={StaticResource AreaConverter}}"/>
                 </Grid>
             </Ellipse.ToolTip>

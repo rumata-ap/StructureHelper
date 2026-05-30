@@ -20,11 +20,11 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="{Binding WindowTitle}"/>
-        <TextBlock Grid.Row="1" Text="Progress"/>
+        <TextBlock Grid.Row="1" Text="{DynamicResource Progress}"/>
         <ProgressBar Grid.Column="1" Grid.Row="1" Minimum="{Binding MinValue}" Maximum="{Binding MaxValue}" Value="{Binding ProgressValue}"/>
-        <TextBlock Grid.Row="2" Text="Total step"/>
+        <TextBlock Grid.Row="2" Text="{DynamicResource Total step}"/>
         <TextBox Grid.Column="2" Grid.Row="2" Text="{Binding MaxValue}" IsEnabled="False"/>
-        <TextBlock Grid.Row="3" Text="Current step"/>
+        <TextBlock Grid.Row="3" Text="{DynamicResource Current step}"/>
         <TextBox Grid.Column="1" Grid.Row="3" Text="{Binding ProgressValue}" IsEnabled="False"/>
 
     </Grid>

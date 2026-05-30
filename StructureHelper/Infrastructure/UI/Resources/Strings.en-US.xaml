@@ -4,7 +4,7 @@
       xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <system:String x:Key="Actions">Actions</system:String>
-    <system:String x:Key="Geometry">Geomerty</system:String>
+    <system:String x:Key="Geometry">Geometry</system:String>
     <system:String x:Key="Materials">Materials</system:String>
     <system:String x:Key="Add">Add</system:String>
     <system:String x:Key="Change Language">Change Language</system:String>
@@ -64,7 +64,7 @@
     <system:String x:Key="Concrete circle">Concrete circle</system:String>
     
     <!-- Analysis -->
-    <system:String x:Key="Analisis">Analisis</system:String>
+    <system:String x:Key="Analysis">Analysis</system:String>
     <system:String x:Key="Add Force Calculator">Add Force Calculator</system:String>
     <system:String x:Key="Add Interaction Diagram Calculator">Add Interaction Diagram Calculator</system:String>
     <system:String x:Key="Run Calculations">Run Calculations</system:String>
@@ -167,7 +167,7 @@
     <system:String x:Key="Tension for SLS">Tension for SLS</system:String>
     <system:String x:Key="Relative humidity">Relative humidity</system:String>
     <system:String x:Key="Elastic material">Elastic material</system:String>
-    <system:String x:Key="Young's modulus">Young's modulus</system:String>
+    <system:String x:Key="YoungsModulus">Youngs modulus</system:String>
     <system:String x:Key="Compressive strength">Compressive strength</system:String>
     <system:String x:Key="Tensile strength">Tensile strength</system:String>
 
@@ -214,11 +214,11 @@
     <system:String x:Key="Interaction Diagram Calculator">Interaction Diagram Calculator</system:String>
     <system:String x:Key="Calculation Results">Calculation Results</system:String>
     <system:String x:Key="Set Prestrain">Set Prestrain</system:String>
-    <system:String x:Key="Geometry Properies">Geometry Properies</system:String>
+    <system:String x:Key="Geometry Properties">Geometry Properties</system:String>
     <system:String x:Key="Array">Array</system:String>
     <system:String x:Key="Structure Helper">Structure Helper</system:String>
     <system:String x:Key="StructureHelper">Structure Helper</system:String>
-    <system:String x:Key="Grid properies">Grid properies</system:String>
+    <system:String x:Key="Grid Properties">Grid Properties</system:String>
     <system:String x:Key="Material Partial Factors">Material Partial Factors</system:String>
     <system:String x:Key="Material Safety Factors">Material Safety Factors</system:String>
     <system:String x:Key="Graph">Graph</system:String>
@@ -308,16 +308,75 @@
     <system:String x:Key="StressState">Stress state</system:String>
 
     <!-- Primitive Popup -->
-    <system:String x:Key="Координата X">X Coordinate</system:String>
-    <system:String x:Key="Координата Y">Y Coordinate</system:String>
-    <system:String x:Key="Материал">Material</system:String>
-    <system:String x:Key="Цвет">Color</system:String>
-    <system:String x:Key="Прозрачность">Opacity</system:String>
-    <system:String x:Key="Заблокировать объект">Lock object</system:String>
-    <system:String x:Key="Z-порядок">Z-order</system:String>
-    <system:String x:Key="Max =">Max =</system:String>
-    <system:String x:Key="%">%</system:String>
+    <system:String x:Key="CoordinateX">X Coordinate</system:String>
+    <system:String x:Key="CoordinateY">Y Coordinate</system:String>
+    <system:String x:Key="MaterialPopup">Material</system:String>
+    <system:String x:Key="ColorPopup">Color</system:String>
+    <system:String x:Key="OpacityPopup">Opacity</system:String>
+    <system:String x:Key="LockObject">Lock object</system:String>
+    <system:String x:Key="ZOrder">Z-order</system:String>
+    <system:String x:Key="MaxEquals">Max =</system:String>
+    <system:String x:Key="Percent">%</system:String>
     <system:String x:Key="Ok">OK</system:String>
     <system:String x:Key="Cancel">Cancel</system:String>
+    <system:String x:Key="SetInFrontOfAll">Set in front of all</system:String>
+    <system:String x:Key="SetInBackOfAll">Set in back of all</system:String>
+
+    <!-- Additional UI strings -->
+    <system:String x:Key="Draw Lines">Draw Lines</system:String>
+    <system:String x:Key="Show Areas">Show Areas</system:String>
+    <system:String x:Key="Show diagram">Show diagram</system:String>
+    <system:String x:Key="Partial frs">Partial frs</system:String>
+    <system:String x:Key="Rebuild">Rebuild</system:String>
+    <system:String x:Key="ZoomIn">ZoomIn</system:String>
+    <system:String x:Key="ZoomOut">ZoomOut</system:String>
+    <system:String x:Key="ColorMap">ColorMap</system:String>
+    <system:String x:Key="Minimum Value">Minimum Value</system:String>
+    <system:String x:Key="Maximum Value">Maximum Value</system:String>
+    <system:String x:Key="Set custom colors">Set custom colors</system:String>
+    <system:String x:Key="Set section line">Set section line</system:String>
+    <system:String x:Key="Invert Values">Invert Values</system:String>
+    <system:String x:Key="Print">Print</system:String>
+    <system:String x:Key="Add all">Add all</system:String>
+    <system:String x:Key="Clear all">Clear all</system:String>
+    <system:String x:Key="Ultimate Limit State">Ultimate Limit State</system:String>
+    <system:String x:Key="Serviceability Limit State">Serviceability Limit State</system:String>
+    <system:String x:Key="Short Term">Short Term</system:String>
+    <system:String x:Key="Long Term">Long Term</system:String>
+    <system:String x:Key="Export">Export</system:String>
+    <system:String x:Key="Graphic">Graphic</system:String>
+    <system:String x:Key="CrcDiagrams">CrcDiagrams</system:String>
+    <system:String x:Key="Anchorage">Anchorage</system:String>
+    <system:String x:Key="Acrc">Acrc</system:String>
+    <system:String x:Key="Select All">Select All</system:String>
+    <system:String x:Key="Unselect All">Unselect All</system:String>
+    <system:String x:Key="Invert Selection">Invert Selection</system:String>
+    <system:String x:Key="Show Safety Factors">Show Safety Factors</system:String>
+    <system:String x:Key="Show Partial Factors">Show Partial Factors</system:String>
+    <system:String x:Key="Draw Lines ToolTip">Draw Lines</system:String>
+    <system:String x:Key="Color legend">Color legend</system:String>
+    <system:String x:Key="Summary information">Summary information</system:String>
+    <system:String x:Key="Total area">Total area</system:String>
+    <system:String x:Key="Negative value area">Negative value area</system:String>
+    <system:String x:Key="Zero value area">Zero value area</system:String>
+    <system:String x:Key="Positive value area">Positive value area</system:String>
+    <system:String x:Key="Total sum">Total sum</system:String>
+    <system:String x:Key="Sum negative">Sum negative</system:String>
+    <system:String x:Key="Sum positive">Sum positive</system:String>
+    <system:String x:Key="Summary section">Summary section</system:String>
+    <system:String x:Key="X-distance">X-distance</system:String>
+    <system:String x:Key="Y-distance">Y-distance</system:String>
+    <system:String x:Key="Sum above line">Sum above line</system:String>
+    <system:String x:Key="Sum under line">Sum under line</system:String>
+
+    <!-- Missing keys previously only in ru-RU -->
+    <system:String x:Key="Copy To">Copy To</system:String>
+    <system:String x:Key="Mx">Mx</system:String>
+    <system:String x:Key="My">My</system:String>
+    <system:String x:Key="Nz">Nz</system:String>
+    <system:String x:Key="Stress">Stress</system:String>
+    <system:String x:Key="Strain">Strain</system:String>
+    <system:String x:Key="x-value">x-value</system:String>
+    <system:String x:Key="y-value">y-value</system:String>
 
 </ResourceDictionary> 

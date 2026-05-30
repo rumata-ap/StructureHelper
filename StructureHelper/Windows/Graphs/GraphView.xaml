@@ -1,4 +1,4 @@
-﻿<Window x:Class="StructureHelper.Windows.Graphs.GraphView"
+<Window x:Class="StructureHelper.Windows.Graphs.GraphView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -36,7 +36,7 @@
                                         <RowDefinition Height="70"/>
                                         <RowDefinition/>
                                     </Grid.RowDefinitions>
-                                    <GroupBox Grid.Row="0" Margin="10,0,10,0" Header="X-axis values">
+                                    <GroupBox Grid.Row="0" Margin="10,0,10,0" Header="{DynamicResource X-axis values}">
                                         <StackPanel>
                                             <ComboBox ItemsSource="{Binding XItems.Collection}" SelectedItem="{Binding XItems.SelectedItem}">
                                                 <ComboBox.ItemTemplate>
@@ -56,18 +56,18 @@
                                                     </DataTemplate>
                                                 </ComboBox.ItemTemplate>
                                             </ComboBox>
-                                            <CheckBox Margin="5" Content="Invert Values" IsChecked="{Binding InvertXValues}"/>
+                                            <CheckBox Margin="5" Content="{DynamicResource Invert Values}" IsChecked="{Binding InvertXValues}"/>
                                         </StackPanel>
 
                                     </GroupBox>
-                                    <GroupBox Grid.Row="1" Margin="10,0,10,0" Header="Y-axis values">
+                                    <GroupBox Grid.Row="1" Margin="10,0,10,0" Header="{DynamicResource Y-axis values}">
                                         <Grid>
                                             <Grid.RowDefinitions>
                                                 <RowDefinition/>
                                                 <RowDefinition Height="30"/>
                                             </Grid.RowDefinitions>
                                             <ContentControl ContentTemplate="{StaticResource ResourceKey=SelectItems}" Content="{Binding YItems}"/>
-                                            <CheckBox Grid.Row="1" Margin="5" Content="Invert Values" IsChecked="{Binding InvertYValues}"/>
+                                            <CheckBox Grid.Row="1" Margin="5" Content="{DynamicResource Invert Values}" IsChecked="{Binding InvertYValues}"/>
                                         </Grid>
                                     </GroupBox>
                                 </Grid>
@@ -78,7 +78,7 @@
                 <ContentControl Grid.Row="1" ContentTemplate="{StaticResource ResourceKey=LineVisualProperties}" Content="{Binding VisualProps}"/>
                 
                 <StackPanel Grid.Row="2">
-                    <Button Margin="3" Content="Draw Lines" ToolTip="Draw Lines" Command="{Binding RedrawLinesCommand}"/>
+                    <Button Margin="3" Content="{DynamicResource Draw Lines}" ToolTip="{DynamicResource Draw Lines}" Command="{Binding RedrawLinesCommand}"/>
                 </StackPanel>
             </Grid>
             <lvc:CartesianChart Name="MainChart" Grid.Column="1" Series="{Binding SeriesCollection}" LegendLocation="Bottom" Zoom="Xy">

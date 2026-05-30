@@ -23,8 +23,8 @@
                 <RowDefinition Height="22"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Set Auto-prestrain"/>
-            <TextBlock Grid.Row="1" Text="Coefficient"/>
+            <TextBlock Text="{DynamicResource Set Auto-prestrain}"/>
+            <TextBlock Grid.Row="1" Text="{DynamicResource Coefficient}"/>
             <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Coefficient}"/>
         </Grid>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right">

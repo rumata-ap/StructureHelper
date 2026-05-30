@@ -17,7 +17,7 @@
         <!--ForceTemplates.xaml-->
         <ContentControl ContentTemplate="{StaticResource ResourceKey=ForceActionTemplate}" Content="{Binding}"/>
         <StackPanel Grid.Row="1">
-            <TextBlock Text="Full service load combination"/>
+            <TextBlock Text="{DynamicResource Full service load combination}"/>
             <Grid DataContext="{Binding ForceTupleVM}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25"/>
@@ -28,9 +28,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock HorizontalAlignment="Center" Text="Mx" />
-                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="My" />
-                <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="Nz" />
+                <TextBlock HorizontalAlignment="Center" Text="{DynamicResource Moment Mx}" />
+                <TextBlock Grid.Column="1" HorizontalAlignment="Center" Text="{DynamicResource Moment My}" />
+                <TextBlock Grid.Column="2" HorizontalAlignment="Center" Text="{DynamicResource Force Nz}" />
                 <TextBox Grid.Row="1" Text="{Binding Mx, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding My, Converter={StaticResource MomentConverter}, ValidatesOnExceptions=True}"/>
                 <TextBox Grid.Row="1" Grid.Column="2" Text="{Binding Nz, Converter={StaticResource ForceConverter}, ValidatesOnExceptions=True}"/>
@@ -44,9 +44,9 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <TextBlock Text="Long Term factor"/>
+                <TextBlock Text="{DynamicResource Long Term factor}"/>
                 <TextBox Grid.Column="1" Text="{Binding LongTermFactor, Converter={StaticResource PlainDouble}, ValidatesOnExceptions=True}"/>
-                <TextBlock Grid.Row="1" Text="ULS Safety Factor"/>
+                <TextBlock Grid.Row="1" Text="{DynamicResource ULS Safety Factor}"/>
                 <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding ULSFactor, Converter={StaticResource PlainDouble}, ValidatesOnExceptions=True}"/>
             </Grid>
         </StackPanel>
