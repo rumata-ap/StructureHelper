@@ -5,17 +5,23 @@ using StructureHelperLogics.Models.Materials;
 using StructureHelperLogics.Models.Primitives;
 using StructureHelperLogics.NdmCalculations.Analyses;
 using StructureHelperLogics.NdmCalculations.Primitives;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StructureHelperLogics.Models.CrossSections
 {
+    /// <summary>
+    /// Репозиторий поперечного сечения: содержит примитивы, материалы, усилия и калькуляторы.
+    /// </summary>
     public interface ICrossSectionRepository : IHasHeadMaterials, IHasPrimitives
     {
+        /// <summary>
+        /// Список силовых воздействий на сечение.
+        /// </summary>
         List<IForceAction> ForceActions { get; }
+
+        /// <summary>
+        /// Список калькуляторов, привязанных к сечению.
+        /// </summary>
         List<ICalculator> CalculatorsList { get; }
     }
 }

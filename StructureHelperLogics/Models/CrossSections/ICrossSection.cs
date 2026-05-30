@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace StructureHelperLogics.Models.CrossSections
+﻿namespace StructureHelperLogics.Models.CrossSections
 {
+    /// <summary>
+    /// Интерфейс поперечного сечения, содержащего ссылку на репозиторий сечения.
+    /// </summary>
     public interface ICrossSection
     {
+        /// <summary>
+        /// Репозиторий поперечного сечения (примитивы, усилия, калькуляторы).
+        /// </summary>
         ICrossSectionRepository SectionRepository { get; }
     }
 }

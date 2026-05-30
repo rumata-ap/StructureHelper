@@ -1,12 +1,10 @@
 ﻿using StructureHelperCommon.Models.Shapes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StructureHelperLogics.NdmCalculations.Primitives
 {
+    /// <summary>
+    /// Интерфейс круглого примитива поперечного сечения.
+    /// </summary>
     public interface ICirclePrimitive : INdmPrimitive, IHasDivisionSize, ICircleShape
     {
     }
