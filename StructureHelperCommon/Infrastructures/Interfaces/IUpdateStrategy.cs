@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 namespace StructureHelperCommon.Infrastructures.Interfaces
 {
     /// <summary>
-    /// Logic for update object of type <typeparamref name="T"/>
+    /// Стратегия обновления свойств объекта типа <typeparamref name="T"/>.
     /// </summary>
-    /// <typeparam name="T">Type of object</typeparam>
+    /// <typeparam name="T">Тип обновляемого объекта.</typeparam>
     public interface IUpdateStrategy<T>
     {
         /// <summary>
-        /// Update properties of target object from source object
+        /// Обновляет свойства целевого объекта из исходного.
         /// </summary>
-        /// <param name="targetObject">Target object</param>
-        /// <param name="sourceObject">Source object</param>
+        /// <param name="targetObject">Целевой объект для обновления.</param>
+        /// <param name="sourceObject">Исходный объект-источник данных.</param>
         void Update(T targetObject, T sourceObject);
     }
 }

@@ -127,6 +127,18 @@ StructureHelper/
 - `Strings.ru-RU.xaml` — русская локализация
 - `Strings.en-US.xaml` — английская локализация
 
+### Как добавить новый перевод
+
+1. Добавьте элемент `<system:String x:Key="MyKey">Значение</system:String>` в **оба** файла локализации (`Strings.en-US.xaml` и `Strings.ru-RU.xaml`). Ключ (`x:Key`) должен быть **одинаковым** в обоих файлах — используйте английские идентификаторы без спецсимволов (апострофов, кавычек).
+2. В XAML-разметке используйте `{DynamicResource MyKey}` вместо хардкода: `Text="{DynamicResource MyKey}"`.
+3. Словари подключены через `MergedDictionaries` в `App.xaml`. Типы `System.Enum` и `System.String` подключены через `xmlns:core="clr-namespace:System;assembly=mscorlib"` (для .NET 6 используется `mscorlib` как обёртка совместимости).
+
+### Важные правила
+
+- **Не используйте** `assembly=System.Runtime` или `assembly=System.Private.CoreLib` в XAML — эти сборки недоступны при парсинге XAML в .NET 6. Используйте `assembly=mscorlib`.
+- **Не дублируйте** ключи в одном словаре — это вызовет `XamlParseException` при запуске.
+- **Ключи должны быть на английском** — не используйте русские строки как ключи (например, правильно: `x:Key="CoordinateX"`, неправильно: `x:Key="Координата X"`).
+
 ## 📄 Лицензия
 
 Проект распространяется под лицензией MIT. Подробнее см. файл [LICENSE](StructureHelper/Documentation/License.txt).
