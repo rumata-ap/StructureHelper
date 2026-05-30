@@ -1,15 +1,11 @@
 ﻿using StructureHelperCommon.Infrastructures.Enums;
 using StructureHelperCommon.Services.Units;
-using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Data;
 
 namespace StructureHelper.Infrastructure.UI.Converters.Units
 {
+    /// <summary>
+    /// Конвертер единиц напряжения (МПа).
+    /// </summary>
     internal class Stress : UnitBase
     {
         public override UnitTypes UnitType { get => UnitTypes.Stress; }

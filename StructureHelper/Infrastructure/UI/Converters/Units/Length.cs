@@ -3,6 +3,9 @@ using StructureHelperCommon.Services.Units;
 
 namespace StructureHelper.Infrastructure.UI.Converters.Units
 {
+    /// <summary>
+    /// Конвертер единиц длины (мм).
+    /// </summary>
     internal class Length : UnitBase
     {
         public override UnitTypes UnitType { get => UnitTypes.Length; }
